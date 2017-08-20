@@ -1,0 +1,164 @@
+.navbar-nav>li>a {
+    padding-top: 45px;
+    padding-bottom: 35px;}
+.nav>li>a{padding-left:40px}
+body{font-size: 10px}
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+    color: #555;
+    background-color:#f8f8f8;}
+.navbar{margin-bottom: 0}
+.navbar-nav{
+    float: right;}
+.fl{float: left;}
+.fr{float: right;}
+.item img{width: 100%}
+.container-fluid{width:80%;
+    margin: 0 auto}
+@media (max-width: 1180px){
+    .navbar-brand{display: none;}
+    .nav>li>a {
+        line-height: 15px;}
+    .navbar-nav{width: 88%}
+    }
+@media (max-width: 990px){
+    .navbar-brand{
+        display: none;}
+    .nav>li>a {
+        padding-left: 40px;
+        padding-right: 20px;
+        line-height: 15px;}
+    }
+@media (max-width: 862px){.navbar-nav{width: 100%}}
+@media (max-width: 767px){
+    .navbar-nav{width: 100%}
+    .navbar-default{height: 60px}
+    .navbar-brand{padding:0px;
+        height:20px;
+        margin-top: 5px;
+        display: block;}
+    .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+        color: #555;
+        background-color:rgba(0,0,0,0);}
+    .navbar-collapse{background:rgba(250,250,250,0.8); 
+        border:none;
+        margin-top: 5px;}
+    #example-navbar-collapse{position: relative;
+        z-index: 999}
+    .navbar-brand img{width:170px;}
+    .navbar-collapse ul{float:left;}
+    .navbar-nav > li > a{
+        font-size: 1.2rem;
+        padding: 10px}
+    } 
+ul,li{list-style: none}
+.clear{clear: both}
+.overflow{overflow: hidden;}
+.nav-tabs {display: table;
+    border-bottom: 1px solid white;
+    margin-left: auto;
+    margin-right: auto}
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
+    border-bottom-color: #ddd;
+    background: #E45C0E}
+#myTab>li>a {padding: 0;
+    text-align: center;
+    line-height: 50px}
+#myTab li a{width: 50px;
+    height: 50px;
+    display: inline-block;
+    border-radius: 50px;}
+#myTabContent{width: 80%;
+    margin: 0 auto;}
+ @media (max-width: 1280px){
+    .h1{font-size: 2.4rem;}
+    }
+@media (max-width: 990px){
+    .h1{font-size: 1.8rem}
+    .h1p{font-size:1.2rem}
+     #myTab li a{width: 40px;
+        height: 40px;
+        border-radius: 40px;
+        font-size: 1.2rem;
+        line-height: 40px} 
+    }
+@media (max-width: 767px){
+    .h1{font-size: 1.2rem;}
+    .h1p{font-size: 1.2rem}
+    #myTab li a{width: 30px;
+        height: 30px;
+        border-radius: 30px;
+        font-size: 1.2rem;
+        line-height: 30px}
+        } 
+.row2{margin-right: 0}
+.row2 p{text-indent: 2.4rem;
+    font-size: 1.2rem;
+    line-height: 2.4rem}
+@media (max-width: 360px){
+    .row2 p{
+        font-size: 10px;
+        line-height: 12px;}}
+.row{margin-right: 0}
+footer{background: #E8D4AF}
+@media (max-width: 767px){
+    .divl{text-align: center;}
+    .divr{padding: 0 45%}
+}
+.news{
+    background-color: #f7ebd5;
+    font-size: 1.2rem;
+    padding-bottom: 3rem;
+}
+.news .miao{
+    background-color: #fdcd3d;
+    height:344px;
+}
+.news .dong{
+    background-image: url(../images/news01.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height:344px;
+}
+.news .mei{
+    background-image: url(../images/news02.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height:344px;
+}
+.news .sai{
+    background-color: #fff;
+    height:344px;
+}
+.news .title{
+    padding:5px;
+    background-color: #fff;
+    color: #45301f;
+}
+.sai .title{
+    background-color: #fdcd3d;
+}
+.date .f90{
+    font-size: 9.0rem;
+    color: #45301f;
+}
+.date .f36{
+    font-size: 3.6rem;
+    color: #a2a2a2;
+}
+.date .f24{
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: #45301f;
+}
+.dong h6, .dong .text, .mei h6, .mei .text{
+    color: #fff;
+}
+.dong h6, .mei h6{
+    margin-top: 12rem;
+}
+.dong a, .mei a{
+    color: #fff!important;
+}
+.news .more{
+    color:#45301f;
+}
