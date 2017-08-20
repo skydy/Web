@@ -1,0 +1,119 @@
+*{margin: 0;
+    padding: 0}
+ul li{list-style: none}
+a{text-decoration: none;
+    color: black}
+.head img{width: 100%;min-width: 1280px;
+    display: block;}
+.fl{float: left;}
+.fr{float: right;}
+.clear{clear: both}
+.nav{width: 100%;min-width: 1280px;
+    height: 60px;
+    background: #6F1418;
+    overflow: hidden;}
+.subnav li{float: left;
+    line-height: 60px;
+    display: block;
+    width: 100px;
+    text-align: center;
+    padding: 0 76px;}
+.subnav li a{color: white;
+    display: block;}
+ .subnav li a:hover{background: white;
+    color: #6F1418;}
+ .select{background: white;
+    color: #6F1418!important;}
+.subnav{width: 1280px;
+    height: 60px;
+    margin: 0 auto}
+  img{ display: block; border:none;}
+  ul,li{ list-style: none;}
+    .lubo{ width: 100%;min-width: 1280px;clear: both; position: relative; height:599px;}
+  .lubo_box{ position: relative; width: 100%;min-width: 1280px; height:368px; }
+  .lubo_box li{ float: left;position: absolute; top: 0; left: 0; width: 100%;min-width: 1280px; height:599px; opacity: 0;filter:alpha(opacity=0);}
+  .lubo_box li a{ display: block;width: 100%;min-width: 1280px;  height: 100%;}
+
+  .lubo_box li img{ width: 100%;min-width: 1280px; height: 368px;}
+
+  /*圆点*/
+  .cir_box{ overflow: hidden; position: absolute; z-index: 100;}
+  .cir_box li{ 
+    float: left; 
+    width: 20px; height:20px; margin:0 5px; cursor: pointer; background:#D6D6BD; opacity: 0.8;filter:alpha(opacity=80);
+    border-radius: 20px;
+    background: url(../images/circle_on.png) no-repeat\9;
+    *background: url(../images/circle_on.png) no-repeat;
+    _background: url(../images/circle_on.png) no-repeat;
+  }
+  .cir_on{ 
+    background:#6F1418 !important;
+    background: url(../images/circle.png) no-repeat\9 !important;
+    *background: url(../images/circle.png) no-repeat !important;
+    _background: url(../images/circle.png) no-repeat !important;
+  }
+
+  /*按钮*/
+  .lubo_btn{ position: absolute; width: 100%;min-width: 1280px; top: 200px;}
+  .left_btn, .right_btn{ width: 30px; height: 80px; background: #000;opacity: 0.8;filter:alpha(opacity=80); cursor: pointer; color: #fff; line-height: 80px; font-size: 30px; text-align: center;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;}
+  .left_btn{ float: left;}
+  .right_btn{ float: right;}
+.overflow{overflow: hidden;}
+.content{width: 100%;min-width: 1280px;
+  height: 1200px;
+  background: #E9E7DC}
+.con{width: 1200px;
+  height: 1200px;
+  margin: 0 auto}
+.h1{background: url(../images/bantb.png) no-repeat  420px 58px;
+    height:100px;
+    text-align: center;
+    line-height: 100px;
+    padding-top: 58px;
+    padding-bottom: 116px;}
+.con1l>span{font-size: 38px;
+  font-weight: bold}
+.con1l>p,.con1l>ul>li{font-size: 18px;
+  font-weight: bold}
+.con1l>p{margin-bottom: 44px;}
+.con1{height: 300px;
+  margin-bottom: 70px}
+.con1r{width: 730px;}
+#nickname,#email,#tel,#add{
+  width: 354px;
+  height: 44px;
+  line-height: 44px;
+  margin-bottom: 16px;
+  border:1px solid #A9A9A9;
+}
+#mess{width: 716px;
+  height: 85px}
+#submit{width: 140px;
+  height: 34px;
+  margin-left: 288px;}
+
+footer{background: url(../images/1-foot.jpg) repeat-x ;min-width: 1280px;
+  height: 167px}
+footer ul li a{color: white;
+    border-right: 1px solid white;
+    padding: 0 20px;
+    }
+.lasta a{border-right: 0}
+footer ul li{float: left;
+  
+  line-height: 64px;
+  height: 20px;
+  color: white;
+}
+footer ul{width: 1000px;
+  height: 64px;
+  margin: 0 auto}
+.btp{width:878px;
+  margin: 0 auto;
+  color: white;
+  line-height: 50px;
+  height: 50px;}
+footer>.p10{width:480px;
+  margin: 0 auto;
+  color: white;
+  line-height: 50px;}
