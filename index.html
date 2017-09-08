@@ -8,10 +8,12 @@
 <link href="css/style.css" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="css/index.css">
 <link rel="stylesheet" type="text/css" href="css/prism.css">
-<script src="js/jquery-3.1.0.min.js"></script>
+<script src="js/jquery-1.7.2.js"></script>
 <script type="text/javascript" src="js/quietflow.js"></script>
 <script type="text/javascript" src="js/index.js"></script>
-
+<style>
+  body{background: #ECF0F1}#btn{float: right;background: white;outline: none;border: 0 none;color: #c3a8f3;font-size: 16px;cursor: pointer;}#btn:hover{color: #5c08f1}
+</style>
 <!--[if lt IE 9]>
 <script src="js/modernizr.js"></script>
 <![endif]-->
@@ -66,7 +68,7 @@
     </aside>
     <div class="blogitem">
       <article>
-        <h2 class="title"><a href="#">专业技能</a></h2>
+        <h2 class="title" style="width:88%"><a href="#">专业技能</a><button id="btn">animationClosed</button></h2>
         <ul class="text">
           <p>熟练使用 Html5 Css3 JavaScript，能够合理完成web端或者移动端页面的编写和维护，思路清晰，结构完整，易于维护和持久化开发，能处理主流浏览器兼容问题。熟练使用原生js, 了解js面向对象原理，闭包以及原型结构，能够合理利用面向对象以及模块化开发,并且能适当完成框架封装。熟练使用 jQuery，并能完成相关项目。</p>
           <p>熟悉animation fullpage jquery-ui template lazyload jQeasing masonry jquerymobile 等实用插件的应用,轮播图，tab栏，瀑布流，延迟加载，全屏滚动等等常用功能的实现,熟练使用Bootstrap 框架以及轻量级框架 zepto 的使用</p>
@@ -111,10 +113,21 @@
    </section> -->
    <div class="Copyright">
      <ul>
-       <a href="#">电话：15623073203</a><a href="#">QQ：517057434</a><a href="#">邮箱：517057434@qq.com</a>
+       <a href="#">QQ：517057434</a><a href="#" style="border-right:0">邮箱：517057434@qq.com</a>
      </ul>
      <p>Web site belongs to the sky</p>
    </div>
  </footer>
 </body>
 </html>
+<script>
+  $(function(){
+    $('#btn').toggle(function(){
+      $("#Quietflow").fadeOut()
+      $(this).text('openAnimation')
+    },function(){
+      $("#Quietflow").fadeIn()
+      $(this).text('animationClosed')
+    })
+  })
+</script>
