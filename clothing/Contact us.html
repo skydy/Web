@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>联系我们</title>
+    <link rel="stylesheet" href="css/style7.css">
+    <script type="text/javascript" src="js/jquery-1.7.2.js"></script>
+    <script type="text/javascript" src="js/lubotu.js"></script>
+    <script src="js/jqery.js"></script>
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+<script>
+    function nicknamef(){
+        nickname.style.border="1px solid #1883D7"}
+    function nicknameb(){
+        var nicknameVal=document.form.nickname.value;
+        var nicknametext=/^(\w{1,24}|[\u4e00-\u9fa5]{1,12})$/
+        if(nicknameVal==""){
+            nickname.style.border="1px solid red";
+            return false;
+        }else{if(!nicknametext.test(nicknameVal)){
+            return false;}
+        else{nickname.style.border="1px solid black";
+            return true;}
+        }
+    }
+    function telf(){
+        tel.style.border="1px solid #1883D7"}
+    function telb(){
+        var telVal=document.form.tel.value;
+        var teltext=/^1[34578]\d{9}$/
+        if(telVal==""){
+            tel.style.border="1px solid red";
+            return false;
+        }else{if(!teltext.test(telVal)){
+            return false;}
+        else{tel.style.border="1px solid black";
+            return true;}
+        }
+    }
+    function emailf(){
+        email.style.border="1px solid #1883D7"}
+    function emailb(){
+        var emailVal=document.form.email.value;
+        var emailtext=/^(\w)+(\.\w+)*@(\w)+((\.\w+)+)$/
+        if(emailVal==""){
+            email.style.border="1px solid red";
+            return false;
+        }else{if(!emailtext.test(emailVal)){
+            return false;}
+        else{email.style.border="1px solid black";
+            return true;}
+        }
+    }
+</script>
+</head>
+<body>
+    <div class="head">
+        <img src="images/1-banner.jpg" alt="">
+    </div>
+    <div class="nav">
+        <ul class="subnav">
+            <li><a href="index.html">首页</a></li>
+            <li><a href="Company.html">公司介绍</a></li>
+            <li><a href="News.html">新闻中心</a></li>
+            <li><a href="Product center.html">产品中心</a></li>
+            <li><a href="Contact us.html" class="select">联系我们</a></li>
+        </ul>
+    </div>
+    <div class="lubo">
+      <ul class="lubo_box">
+        <li style=" opacity: 1;filter:alpha(opacity=100);"><a href="" style="background:url(images/1-banner1.jpg) center top no-repeat"></a></li>
+        <li><a href="" style="background:url(images/1-banner2.jpg) center top no-repeat"></a></li>
+        <li><a href="" style="background:url(images/1-banner3.jpg) center top no-repeat"></a></li>
+        <li><a href="" style="background:url(images/1-banner2.jpg) center top no-repeat"></a></li>
+        <li><a href="" style="background:url(images/1-banner1.jpg) center top no-repeat"></a></li>
+      </ul>
+    </div>
+    <div class="content">
+        <div class="con">
+            <h1 class="h1"><a href="">联系我们</a></h1>
+            <div class="con1 overflow">
+                <div class="con1l fl overflow">
+                    <span>Welcome!</span>
+                    <p>我们期待与您详细沟通</p>
+                    <ul>
+                        <li>商务合作邮箱：hi@ admin.comn</li>
+                        <li>公司地址：上海市安啦服装有限公司</li>
+                        <li>联系电话：123456789</li>
+                        <li>微信：123456789</li>
+                    </ul>
+                </div>
+                <div class="con1r fr overflow">
+                    <form action="" name="form" method="post" onsubmit="return checkForm()">
+                        <input type="text" placeholder="您的姓名(Name)" id="nickname"  onfocus="nicknamef()" onblur="nicknameb()">
+                        <input type="text" placeholder="您的邮箱(E-mail)" id="email" onfocus="emailf()" onblur="emailb()">
+                        <input type="text" placeholder="您的电话(Tel)" id="tel" onfocus="telf()" onblur="telb()">
+                        <input type="text" placeholder="您的地址" id="add">
+                        <textarea id="mess"  placeholder="您的留言"></textarea>
+                        <input type="submit" value="提交" id="submit">
+                    </form>
+                </div>
+            </div>
+            <img src="images/7-ditu.jpg" alt="" class="">
+        </div>
+    </div>
+    <footer>
+        <ul>
+            <li><a href="">关于我们</a></li>
+            <li><a href="">企业新闻</a></li>
+            <li><a href="">产品中心</a></li>
+            <li><a href="">荣誉资质</a></li>
+            <li><a href="">客户案例</a></li>
+            <li><a href="">人力资源</a></li>
+            <li><a href="">在线留言</a></li>
+            <li class="lasta"><a href="">联系我们</a></li>
+        </ul>
+        <p class="btp overflow">版权所有  上海安啦服装有限公司  Copyright @ 2014-2015. All rights reserved. 陇ICP备201400488号</p>
+        <p class="p10">地址：上海市206号 咨询热线：13893349809</p>
+    </footer>
+</body>
+</html>
