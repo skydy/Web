@@ -1,0 +1,171 @@
+header{width: 100%;min-width: 1280px;}
+.head1{width: 100%;min-width: 1280px;   
+    background: #E2E0E0}
+.head{width: 1166px;
+    height: 50px;
+    margin: 0 auto;
+    background: #E2E0E0}
+.head>div>p{color: #666;
+    font-size: 12px;
+    line-height: 50px;}
+.head>div>a{font-size: 12px;
+    color: #C30D23;
+    line-height: 50px;}
+.topul li{float: left;}
+.topul li a{font-size: 12px;
+    color: #666;
+    line-height: 50px;}
+.head2{width: 1166px;
+    height: 132px;
+    margin: 0 auto}
+.head2>a>img{margin-top: 20px;}
+.head2>div{width: 716px;
+    height: 132px;}
+.input{width: 349px;
+    height: 35px;
+    margin-top: 46px;}
+.input .inputlast{
+    width: 68px;
+    height: 37px;
+    background: #C30D23;
+    border:1px solid #C30D23;
+    color: white;}
+.input input:first-child{
+    width: 276px;
+    height: 33px;
+    line-height: 33px;
+    border:2px solid #C30D23;}
+.search li{float: left;
+    font-size: 12px;}
+.search li a{color:#A9A9A9}
+.search{margin-top: 14px}
+#div{position: relative;}
+.shop{width: 144px;
+    height: 30px;
+    display: block;
+    border: 1px solid #DED7D7;
+    position: absolute;
+    top:54px;
+    left: 420px;}
+.img11{ margin-top: 10px}
+.shop>a>img{float: left;
+    margin-top: 6px;
+    margin-left: 16px}
+.shop>a{font-size: 14px;
+    height: 18px;
+    display: block;
+    line-height: 33px;}
+.img2{position: absolute;
+    top:27px;
+    right:0;}
+.img111 {
+    margin-top: 10px!important;
+}
+.content{width: 1200px;
+    height:614px;
+    margin:0 auto;
+    font-size: 14px;}
+.content>img{float: left;}
+.con{width: 450px;
+    height: 516px;
+    float: right;
+    border: 1px solid #E5E5E5;
+    margin-top: 16px;}
+.con>h4{height: 52px;
+    width: 450px;
+    background: #F1F1F1;
+    font-size: 18px;
+    line-height: 52px;
+    text-align: center;}
+.con>a{width: 277px;
+    height: 40px;
+    border: 1px solid #C30D23;
+    display: block;
+    text-align: center;
+    line-height: 40px;
+    color: #C30D23;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 30px;}
+.con>a>img{vertical-align: middle;}
+.con>form>p>input{width: 276px;
+    border: 1px solid #434343;
+    line-height: 30px;
+    text-indent:16px;}
+.con>form>p{line-height:60px;
+    margin-left: 48px}
+.con>form>.pss{margin-left:62px;}
+.con>form>.pssd{margin-left:34px;}
+.con>form>.code>input{width:138px;}
+.con>form>.code>img{vertical-align: middle;
+    margin-left: 10px;
+    margin-top: -5px}
+.con>form>.code>span{color: #C30D23}
+.con>form>.check>input{width:15px;}
+.con>form>.check{line-height:60px;
+    margin-left: 48px;
+    height: 20px;
+    margin-left: 100px;
+    }
+.con>form>input{width: 276px;
+    height: 32px;
+    background: #C30D23;
+    font-size: 14px;
+    color: white;
+    border:0;
+    margin-top: 40px;
+    margin-left: 100px;}
+footer{background: #F0F0F0;
+    min-width: 1280px;}
+footer .footcon{width: 1200px;
+    height: 80px;
+    margin: 0 auto;
+    border-bottom: 1px solid #D2D2D2;}
+footer .footcon>li{float: left;
+    }
+footer .footcon>li>a>img{margin-top: 30px;
+    float: left}
+footer .footcon>li>a>p{float: left}
+footer .footcon>li>a{width: 188px;
+    height: 35px;
+    display: block;}
+footer .footcon>li>a>.p11{font-size: 15px;
+    color: #0094C9;
+    margin-top: 30px;}
+footer .footcon>li>a>.p22{font-size: 12px;
+    color: #666}
+footer .footcon>.li{margin-left: 148px;}
+footer .footcon1{width: 1200px;
+    height:174px;
+    margin: 0 auto;}
+footer .footcon1>.li1{margin-left: 0;
+    margin-left: 26px;
+    }
+footer .footcon1>li{color:#333;
+    font-size: 15px;
+    float: left;
+    margin-left: 200px;
+    margin-top: 26px;
+    }
+footer .footcon1>li>ul>li>a{font-size: 12px;
+    color: #666}
+footer .footcon1>li>ul{margin-top: 18px}
+footer .foot2{background:#C30D23 }
+footer .footcon2{width: 700px;
+    height: 36px;
+    background: #C30D23;
+    margin: 0 auto}
+footer .footcon2>li{float: left}
+footer .footcon2>li>a{font-size: 12px;
+    color: white;
+    height: 38px;
+    display: block;
+    line-height: 38px;}
+footer .foot3{width: 700px;
+    height: 70px;
+    margin: 0 auto}
+footer .foot3>p{font-size: 12px;
+    color: #333;
+    width: 700px;
+    text-align: center;
+    line-height: 28px;}

@@ -1,0 +1,183 @@
+header{width: 100%;min-width: 1280px;}
+.head1{width: 100%;min-width: 1280px;   
+    background: #E2E0E0}
+.head{width: 1166px;
+    height: 50px;
+    margin: 0 auto;
+    background: #E2E0E0}
+.head>div>p{color: #666;
+    font-size: 12px;
+    line-height: 50px;}
+.head>div>a{font-size: 12px;
+    color: #C30D23;
+    line-height: 50px;}
+.topul li{float: left;}
+.topul li a{font-size: 12px;
+    color: #666;
+    line-height: 50px;}
+.head2{width: 1166px;
+    height: 132px;
+    margin: 0 auto}
+.head2>a>img{margin-top: 20px;}
+.head2>div{width: 716px;
+    height: 132px;}
+.input{width: 349px;
+    height: 35px;
+    margin-top: 46px;}
+.img111 {
+    margin-top: 10px!important;
+}
+.input .inputlast{
+    width: 68px;
+    height: 37px;
+    background: #C30D23;
+    border:1px solid #C30D23;
+    color: white;}
+.input input:first-child{
+    width: 276px;
+    height: 33px;
+    line-height: 33px;
+    border:2px solid #C30D23;}
+.search li{float: left;
+    font-size: 12px;}
+.search li a{color:#A9A9A9}
+.search{margin-top: 14px}
+#div{position: relative;}
+.shop{width: 144px;
+    height: 30px;
+    display: block;
+    border: 1px solid #DED7D7;
+    position: absolute;
+    top:54px;
+    left: 420px;}
+.img11{ margin-top: 10px}
+.shop>a>img{float: left;
+    margin-top: 6px;
+    margin-left: 16px}
+.shop>a{font-size: 14px;
+    height: 18px;
+    display: block;
+    line-height: 33px;}
+.img2{position: absolute;
+    top:27px;
+    right:0;}
+.content{width: 1180px;
+    height: 600px;
+    margin: 0 auto;
+    background:#F5F5F5;
+    margin-bottom: 120px;}
+.headl{width: 142px;
+    height: 600px;
+    background: #ECECEC}
+.headl .ul1 li{width: 142px;
+    height: 46px;
+    line-height: 46px;
+    text-align: center;
+    font-size: 14px;
+    color: #454545;}
+.style{color: white!important;
+    background: #C30D23}
+.conr{width: 1038px;}
+.conr>h5{width: 1038px;
+    height: 46px;
+    line-height: 46px;
+    text-indent: 24px;
+    font-size: 14px;
+    background: #C30D23;
+    color: white;
+    font-weight: 100;}
+.conr .con1{height: 184px;}
+.conr .con2{height:108px;}
+.con1l{width:200px;
+    height: 184px;
+    text-align: center;}
+.con1l>p{font-size: 15px;}
+.con1l>span{font-size: 11px;}
+.con1l>img{margin-top: 34px;}
+.con1>ul>li{font-size: 14px;
+    height: 36px;
+    line-height: 36px;}
+.conr>.h5{background: #ECECEC;
+    color: black}
+.con2>ul>li{float: left;
+    width: 166px;
+    height:48px;
+    line-height:48px;
+    font-size: 14px;
+    text-align: center;}
+.con2>ul>li>ol>li{font-size: 12px;
+    height: 20px;
+    line-height: 20px;
+    }
+.con2>ul>li>ol>li>p,.con2>ul>li>ol>li>span{float: left;
+    text-align: center;
+    display: block;
+    width: 50px;
+    height: 18px;
+    background:#C30D23;
+    color: white}
+.con2>ul>li>ol>li>span{float:right;}
+.con2>ul>li>.lastol>li{width: 110px;
+    margin: 0 auto;
+    cursor: pointer;}
+.con3>p:first-child{margin-left: 22px;
+    margin-top: 28px;
+    font-size: 14px;}
+.con3>.lastp{margin-left: 22px;
+    margin-top: 10px;
+    font-size: 14px;}
+footer{background: #F0F0F0;
+    min-width: 1280px;}
+footer .footcon{width: 1200px;
+    height: 80px;
+    margin: 0 auto;
+    margin-top: 70px;
+    border-bottom: 1px solid #D2D2D2;}
+footer .footcon>li{float: left;
+    }
+footer .footcon>li>a>img{margin-top: 30px;
+    float: left}
+footer .footcon>li>a>p{float: left}
+footer .footcon>li>a{width: 188px;
+    height: 35px;
+    display: block;}
+footer .footcon>li>a>.p11{font-size: 15px;
+    color: #0094C9;
+    margin-top: 30px;}
+footer .footcon>li>a>.p22{font-size: 12px;
+    color: #666}
+footer .footcon>.li{margin-left: 148px;}
+footer .footcon1{width: 1200px;
+    height:174px;
+    margin: 0 auto;}
+footer .footcon1>.li1{margin-left: 0;
+    margin-left: 26px;
+    }
+footer .footcon1>li{color:#333;
+    font-size: 15px;
+    float: left;
+    margin-left: 200px;
+    margin-top: 26px;
+    }
+footer .footcon1>li>ul>li>a{font-size: 12px;
+    color: #666}
+footer .footcon1>li>ul{margin-top: 18px}
+footer .foot2{background:#C30D23 }
+footer .footcon2{width: 700px;
+    height: 36px;
+    background: #C30D23;
+    margin: 0 auto}
+footer .footcon2>li{float: left}
+footer .footcon2>li>a{font-size: 12px;
+    color: white;
+    height: 38px;
+    display: block;
+    line-height: 38px;}
+footer .foot3{width: 700px;
+    height: 70px;
+    margin: 0 auto}
+footer .foot3>p{font-size: 12px;
+    color: #333;
+    width: 700px;
+    text-align: center;
+    line-height: 28px;}
