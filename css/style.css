@@ -10,8 +10,8 @@ a:hover { color: #000; }
 .blank { height: 5px; overflow: hidden; width: 100%; margin: auto; clear: both }
 /* nav */
 header { width: 100%;min-width: 1000px; height: 43px; background: -webkit-gradient(linear, 78% 100%, 78% 41%, from(#EFEEEC), to(#fff)); box-shadow: #D0C9C0 2px 2px 3px }
-header nav { margin: 0 auto; min-width: 768px; text-align: center;width: 54% }
-header nav ul li { line-height: 43px; display: block }
+header nav { margin: 0 auto; text-align: center;width: 980px;height: 43px;}
+header nav ul li { line-height: 43px; display: block ;    font-size: 17px;}
 header nav ul li a { color: #484848; float: left; padding: 0 20px; margin-right: 2px; }
 header nav ul li a:hover, #nav_current { color: #fff; background: #c3a8f3; transform: skew(-20deg); -webkit-transform: skew(-20deg); -moz-transform: skew(-20deg); -o-transform: skew(-20deg); }
 /* mainContent */
