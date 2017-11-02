@@ -124,11 +124,11 @@
 <script>
   $(function(){
     $('#btn').toggle(function(){
-      $("#Quietflow").fadeOut()
-      $(this).text('openAnimation')
-    },function(){
       $("#Quietflow").fadeIn()
       $(this).text('animationClosed')
+    },function(){
+      $("#Quietflow").fadeOut()
+      $(this).text('openAnimation')
     })
   })
 </script>
