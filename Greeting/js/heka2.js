@@ -1,0 +1,29 @@
+/*$(function(){
+    $("#top").toggle(function(){
+        $("#page1").css("display","none");
+        $("#page2").css("display","block");
+    },function(){
+        $("#page2").css("display","none");
+        $("#page3").css("display","block")
+    })
+})*/
+$(function(){
+    $("#music").toggle(function(){
+        $("audio")[0].pause();
+        //$(this).removeClass("play");
+        $(this).css("animation-play-state","paused");
+    },function(){
+        $("audio")[0].play();
+        //$(this).addClass("play");
+        $(this).css("animation-play-state","running");
+    })
+})
+$(function(){
+    $("#top").toggle(function(){
+        $("#page1").fadeOut().siblings("#page2").fadeIn()    
+    },function(){
+        $("#page2").fadeOut().siblings("#page3").fadeIn()
+    },function(){
+        $("#page3").fadeOut().siblings("#page4").fadeIn().siblings("#top").css("display","none")
+    })
+})
