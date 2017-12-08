@@ -69,7 +69,7 @@ ul,li{list-style: none}
     height:66%;
     background: white;
     position: absolute;
-    top: 15%;
+/*     top: 15%; */
     left: 30%
 }
 .biaodan p{color:#242424;
