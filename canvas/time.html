@@ -8,9 +8,14 @@
     <script src="../js/quietflow.js"></script>
     <script src="../js/index.js"></script>
 </head>
-<body style="height:100%;width:100%;overflow:hidden;margin:0">
+<body style="height:100%;width:100%;overflow:hidden;max-width:1000px;margin:0 auto">
     <canvas id="canvas" style="height:100%"></canvas>
     <script src="digit.js"></script>
     <script src="countdown.js"></script>
+    <script>
+        $(window).resize(function () {          
+           $("#Quietflow").hide()
+        });
+    </script>
 </body>
 </html>
