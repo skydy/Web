@@ -1,0 +1,462 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bilibili</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,minimum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/demo.css">
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/jquery.mobile-1.4.5.min.js"></script>
+    <script src="js/swiper-3.3.1.jquery.min.js"></script>
+</head>
+<body>
+    <div data-role="page" id="recommend" data-theme="e">  
+        <div data-role="header" class="header" >
+            <div>
+                <a href="#myPanel1" class="ui-btn ui-corner-all ui-icon-bars ui-btn-icon-notext"></a>
+                <img src="images/touxiang.png" alt="" class="touxiang">
+                <span>未登录</span>
+            </div>
+            <div class="gds">
+                <img src="images/game.png"  alt="">
+                <img src="images/download.png" alt="">
+                <img src="images/search.png"  alt="">
+            </div>
+            <div class="ui-grid-d nav" style="text-align:center">
+                <div class="ui-block-a"><a href="#live" data-transition="flip">直播</a></div>
+                <div class="ui-block-b"><a href="#recommend" class="navs" data-transition="flip">推荐</a></div>
+                <div class="ui-block-c"><a href="#play" data-transition="flip">番剧</a></div>
+                <div class="ui-block-d"><a href="#section" data-transition="flip">分区</a></div>
+                <div class="ui-block-e"><a href="#find" data-transition="flip">发现</a></div>
+            </div>
+        </div>
+        <div data-role="main" id="main">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="psd/b1.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="psd/b2.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="psd/b3.jpg" alt=""></div>
+                </div>
+                <!-- 如果需要分页器 -->
+                <div class="swiper-pagination"></div>
+            </div>
+            <script>
+                $(function(){
+                    var mySwiper = new Swiper('.swiper-container',{
+                        autoplay:5000,
+                        visibilityFullfit:true,
+                        loop:true,
+                        pagination:'.swiper-pagination',
+                    })
+                })
+            </script>
+            <div class="ui-grid-a ui-img ui-content">
+                <h4>
+                    <span class="fl"><img src="psd/hleft.png"  alt="" class="fl"><p>热门推荐</p></span>
+                    <span class="fr"><img src="psd/hright.png"  alt=""></span>
+                </h4>
+                <div class="ui-block-a">
+                    <img src="psd/tui1.jpg"  alt="">
+                    <h4>热门推荐</h4>
+                    <p><span><img src="psd/bofangb.png"  alt="">2.3万</span><span class="fr"><img src="psd/yanb.png"  alt="">1903</span></p>
+                </div>
+                <div class="ui-block-b">
+                    <img src="psd/tui2.jpg"  alt="">
+                    <h4>热门推荐</h4>
+                    <p><span><img src="psd/bofangb.png"  alt="">2.3万</span><span class="fr"><img src="psd/yanb.png"  alt="">1903</span>
+                </div>
+                <div class="ui-block-a">
+                    <img src="psd/tui3.jpg"  alt="">
+                    <h4>热门推荐</h4>
+                    <p><span><img src="psd/bofangb.png"  alt="">2.3万</span><span class="fr"><img src="psd/yanb.png"  alt="">1903</span></p>
+                </div>
+                <div class="ui-block-b">
+                    <img src="psd/tui4.jpg"  alt="">
+                    <h4>热门推荐</h4>
+                    <p><span><img src="psd/bofangb.png"  alt="">2.3万</span><span class="fr"><img src="psd/yanb.png"  alt="">1903</span>
+                </div>
+                <div class="clear"></div>
+                <h4>
+                    <span class="fl"><img src="psd/images/hleft2.jpg"   alt="" class="fl"><p>正在直播</p></span>
+                    <span class="fr span1"><a href="">当前<span>4993</span>个直播></a></span>
+                </h4>
+                <div class="ui-block-a">
+                    <img src="psd/tui5.jpg"  alt="">
+                    <h4>热门推荐</h4>
+                    <p><span><img src="psd/bofangb.png"  alt="">2.3万</span><span class="fr"><img src="psd/yanb.png"  alt="">1903</span></p>
+                </div>
+                <div class="ui-block-b">
+                    <img src="psd/tui6.jpg"  alt="">
+                    <h4>热门推荐</h4>
+                    <p><span><img src="psd/bofangb.png"  alt="">2.3万</span><span class="fr"><img src="psd/yanb.png"  alt="">1903</span>
+                </div>
+                <div class="ui-block-a">
+                    <img src="psd/tui7.jpg"  alt="">
+                    <h4>热门推荐</h4>
+                    <p><span><img src="psd/bofangb.png"  alt="">2.3万</span><span class="fr"><img src="psd/yanb.png"  alt="">1903</span></p>
+                </div>
+                <div class="ui-block-b">
+                    <img src="psd/tui8.jpg"  alt="">
+                    <h4>热门推荐</h4>
+                    <p><span><img src="psd/bofangb.png"  alt="">2.3万</span><span class="fr"><img src="psd/yanb.png"  alt="">1903</span>
+                </div>
+            </div>
+        </div>
+        <div data-role="panel" id="myPanel1" data-display="overlay" data-position-fixed="true"> 
+            <div class="mhead">
+                <img src="images/touxiang.png" alt="" class="touxiang">
+                <p>点击头像登录</p>
+            </div>
+            <div class="ui-grid-solo solom">
+                <div class="solom1"><img src="psd/images/M-1.jpg"  alt="">首页</div>
+                <div><img src="psd/images/M-2.jpg"  alt="">我的大会员<img src="psd/images/M-NEW.jpg" alt="" class="new"></div>
+                <div><img src="psd/images/M-3.jpg"  alt="">离线缓存</div>
+            </div>
+            <div class="ui-grid-solo solom">
+                <div class=""><img src="psd/images/M-4.jpg"  alt="">我的收藏</div>
+                <div><img src="psd/images/M-5.jpg"  alt="">历史记录</div>
+                <div><img src="psd/images/M-6.jpg"  alt="">关注的人</div>
+                <div><img src="psd/images/M-7.jpg"  alt="">我的钱包</div>
+            </div>
+            <div class="ui-grid-solo solom">
+                <div><img src="psd/images/M-8.jpg"  alt="">主题选择</div>
+                <div><img src="psd/images/M-9.jpg"  alt="">应用推荐<img src="psd/images/M-KUANG1.jpg" alt="" class="new"></div>
+                <div><img src="psd/images/M-10.jpg"  alt="">设置与帮助</div>
+            </div>
+        </div>
+        <script>
+        $(function(){
+            if($("#myPanel").hasClass("ui-panel-open")){
+                alert(123);
+                $(".header").attr("data-position-fixed",true);
+                $("#main").attr("data-position-fixed",true);
+            }else{
+               $(".header").attr("data-position-fixed",false);
+                $("#main").attr("data-position-fixed",false); 
+            }
+        })
+
+        </script>
+    </div>
+    <!--推荐页面结束-->
+    <div data-role="page" id="live" data-theme="e">
+        <div data-role="header" class="header">
+            <div>
+                <a href="#myPanel2" class="ui-btn ui-corner-all ui-icon-bars ui-btn-icon-notext"></a>
+                <img src="images/touxiang.png" alt="" class="touxiang">
+                <span>未登录</span>
+            </div>
+            <div class="gds">
+                <img src="images/game.png"  alt="">
+                <img src="images/download.png" alt="">
+                <img src="images/search.png"  alt="">
+            </div>
+            <div class="ui-grid-d nav" style="text-align:center">
+                <div class="ui-block-a"><a href="#live" class="navs" data-transition="flip">直播</a></div>
+                <div class="ui-block-b"><a href="#recommend" data-transition="flip">推荐</a></div>
+                <div class="ui-block-c"><a href="#play" data-transition="flip">番剧</a></div>
+                <div class="ui-block-d"><a href="#section" data-transition="flip">分区</a></div>
+                <div class="ui-block-e"><a href="#find" data-transition="flip">发现</a></div>
+            </div>
+        </div>
+        <div data-role="main" id="main">
+            <img src="psd/images/tui8.jpg"  alt="">
+            <div class="ui-grid-a ui-img ui-content">
+                <h4>
+                    <span class="fl"><img src="psd/hleft.png"  alt="" class="fl"><p>热门推荐</p></span>
+                    <span class="fr"><img src="psd/hright.png"  alt=""></span>
+                </h4>
+                <div class="ui-block-a">
+                    <img src="psd/tui1.jpg"  alt="">
+                    <h4>热门推荐</h4>
+                    <p><span><img src="psd/bofangb.png"  alt="">2.3万</span><span class="fr"><img src="psd/yanb.png"  alt="">1903</span></p>
+                </div>
+                <div class="ui-block-b">
+                    <img src="psd/tui2.jpg"  alt="">
+                    <h4>热门推荐</h4>
+                    <p><span><img src="psd/bofangb.png"  alt="">2.3万</span><span class="fr"><img src="psd/yanb.png"  alt="">1903</span>
+                </div>
+                <div class="ui-block-a">
+                    <img src="psd/tui3.jpg"  alt="">
+                    <h4>热门推荐</h4>
+                    <p><span><img src="psd/bofangb.png"  alt="">2.3万</span><span class="fr"><img src="psd/yanb.png"  alt="">1903</span></p>
+                </div>
+                <div class="ui-block-b">
+                    <img src="psd/tui4.jpg"  alt="">
+                    <h4>热门推荐</h4>
+                    <p><span><img src="psd/bofangb.png"  alt="">2.3万</span><span class="fr"><img src="psd/yanb.png"  alt="">1903</span>
+                </div>
+                <div class="clear"></div>
+                <h4>
+                    <span class="fl"><img src="psd/images/hleft2.jpg"   alt="" class="fl"><p>正在直播</p></span>
+                    <span class="fr span1"><a href="">当前<span>4993</span>个直播></a></span>
+                </h4>
+                <div class="ui-block-a">
+                    <img src="psd/tui5.jpg"  alt="">
+                    <h4>热门推荐</h4>
+                    <p><span><img src="psd/bofangb.png"  alt="">2.3万</span><span class="fr"><img src="psd/yanb.png"  alt="">1903</span></p>
+                </div>
+                <div class="ui-block-b">
+                    <img src="psd/tui6.jpg"  alt="">
+                    <h4>热门推荐</h4>
+                    <p><span><img src="psd/bofangb.png"  alt="">2.3万</span><span class="fr"><img src="psd/yanb.png"  alt="">1903</span>
+                </div>
+                <div class="ui-block-a">
+                    <img src="psd/tui7.jpg"  alt="">
+                    <h4>热门推荐</h4>
+                    <p><span><img src="psd/bofangb.png"  alt="">2.3万</span><span class="fr"><img src="psd/yanb.png"  alt="">1903</span></p>
+                </div>
+                <div class="ui-block-b">
+                    <img src="psd/tui8.jpg"  alt="">
+                    <h4>热门推荐</h4>
+                    <p><span><img src="psd/bofangb.png"  alt="">2.3万</span><span class="fr"><img src="psd/yanb.png"  alt="">1903</span>
+                </div>
+            </div>
+        </div>
+        <div data-role="panel" id="myPanel2" data-display="overlay" data-position-fixed="true"> 
+            <div class="mhead">
+                <img src="images/touxiang.png" alt="" class="touxiang">
+                <p>点击头像登录</p>
+            </div>
+            <div class="ui-grid-solo solom">
+                <div class="solom1"><img src="psd/images/M-1.jpg"  alt="">首页</div>
+                <div><img src="psd/images/M-2.jpg"  alt="">我的大会员<img src="psd/images/M-NEW.jpg" alt="" class="new"></div>
+                <div><img src="psd/images/M-3.jpg"  alt="">离线缓存</div>
+            </div>
+            <div class="ui-grid-solo solom">
+                <div class=""><img src="psd/images/M-4.jpg"  alt="">我的收藏</div>
+                <div><img src="psd/images/M-5.jpg"  alt="">历史记录</div>
+                <div><img src="psd/images/M-6.jpg"  alt="">关注的人</div>
+                <div><img src="psd/images/M-7.jpg"  alt="">我的钱包</div>
+            </div>
+            <div class="ui-grid-solo solom">
+                <div><img src="psd/images/M-8.jpg"  alt="">主题选择</div>
+                <div><img src="psd/images/M-9.jpg"  alt="">应用推荐<img src="psd/images/M-KUANG1.jpg" alt="" class="new"></div>
+                <div><img src="psd/images/M-10.jpg"  alt="">设置与帮助</div>
+            </div>
+        </div>
+    </div>
+    <!--直播页面结束-->
+    <div data-role="page" id="play" data-theme="e">
+        <div data-role="header" class="header">
+            <div>
+                <a href="#myPanel3" class="ui-btn ui-corner-all ui-icon-bars ui-btn-icon-notext"></a>
+                <img src="images/touxiang.png" alt="" class="touxiang">
+                <span>未登录</span>
+            </div>
+            <div class="gds">
+                <img src="images/game.png"  alt="">
+                <img src="images/download.png" alt="">
+                <img src="images/search.png"  alt="">
+            </div>
+            <div class="ui-grid-d nav" style="text-align:center">
+                <div class="ui-block-a"><a href="#live" data-transition="flip">直播</a></div>
+                <div class="ui-block-b"><a href="#recommend" data-transition="flip">推荐</a></div>
+                <div class="ui-block-c"><a href="#play" class="navs" data-transition="flip">番剧</a></div>
+                <div class="ui-block-d"><a href="#section" data-transition="flip">分区</a></div>
+                <div class="ui-block-e"><a href="#find" data-transition="flip">发现</a></div>
+            </div>
+        </div>
+        <div data-role="main" class="mainfj">
+            <img src="psd/kenan.jpg" alt="">
+            <div class="ui-grid-b topimg ui-content">
+                <div class="ui-block-a"><a href=""><img src="psd/images/f-1.jpg"  alt=""></a></div>
+                <div class="ui-block-b"><a href=""><img src="psd/images/f-2.jpg"  alt=""></a></div>
+                <div class="ui-block-c"><a href=""><img src="psd/images/f-3.jpg"  alt=""></a></div>
+            </div>
+            <h4>
+                <span class="fl"><img src="psd/images/f-x.jpg"   alt="" class="fl"><p>新番连载</p></span>
+                <span class="fr span1"><a href="">所有连载></a></span>
+            </h4>
+            <div class="ui-grid-b uixf ui-content" style="text-align:center">
+                <div class="ui-block-a"><a href=""><img src="psd/images/f-4.jpg" alt=""><p>亚人 第一季</p><span>更新至第3话</span></a></div>
+                <div class="ui-block-b"><a href=""><img src="psd/images/f-5.jpg" alt=""><p>我太受欢迎了</p><span>更新至第3话</span></a></div>
+                <div class="ui-block-c"><a href=""><img src="psd/images/f-6.jpg" alt=""><p>火影忍者 疾风传</p><span>更新至第788话</span></a></div>
+            </div>
+            <h4>
+                <span class="fl"><img src="psd/images/f-g.jpg" alt="" class="fl"><p>国产动漫</p></span>
+                <span class="fr span1"><a href="">更多></a></span>
+            </h4>
+            <div class="ui-grid-b uixf ui-content" style="text-align:center">
+                <div class="ui-block-a"><a href=""><img src="psd/images/f-7.jpg" alt=""><p>亚人 第一季</p><span>更新至第3话</span></a></div>
+                <div class="ui-block-b"><a href=""><img src="psd/images/f-8.jpg" alt=""><p>我太受欢迎了</p><span>更新至第3话</span></a></div>
+                <div class="ui-block-c"><a href=""><img src="psd/images/f-9.jpg" alt=""><p>火影忍者 疾风传</p><span>更新至第788话</span></a></div>
+            </div>
+            <h4>
+                <span class="fl"><img src="psd/images/f-xia.jpg" alt="" class="fl"><p>7月新番</p></span>
+                <span class="fr span1"><a href="">分季列表></a></span>
+            </h4>
+            <div class="ui-grid-b uixf ui-content" style="text-align:center">
+                <div class="ui-block-a"><a href=""><img src="psd/images/f-10.jpg" alt=""><p>亚人 第一季</p><span>更新至第3话</span></a></div>
+                <div class="ui-block-b"><a href=""><img src="psd/images/f-11.jpg" alt=""><p>我太受欢迎了</p><span>更新至第3话</span></a></div>
+                <div class="ui-block-c"><a href=""><img src="psd/images/f-12.jpg" alt=""><p>火影忍者 疾风传</p><span>更新至第788话</span></a></div>
+            </div>
+        </div>
+        <div data-role="panel" id="myPanel3" data-display="overlay" data-position-fixed="true"> 
+            <div class="mhead">
+                <img src="images/touxiang.png" alt="" class="touxiang">
+                <p>点击头像登录</p>
+            </div>
+            <div class="ui-grid-solo solom">
+                <div class="solom1"><img src="psd/images/M-1.jpg"  alt="">首页</div>
+                <div><img src="psd/images/M-2.jpg"  alt="">我的大会员<img src="psd/images/M-NEW.jpg" alt="" class="new"></div>
+                <div><img src="psd/images/M-3.jpg"  alt="">离线缓存</div>
+            </div>
+            <div class="ui-grid-solo solom">
+                <div class=""><img src="psd/images/M-4.jpg"  alt="">我的收藏</div>
+                <div><img src="psd/images/M-5.jpg"  alt="">历史记录</div>
+                <div><img src="psd/images/M-6.jpg"  alt="">关注的人</div>
+                <div><img src="psd/images/M-7.jpg"  alt="">我的钱包</div>
+            </div>
+            <div class="ui-grid-solo solom">
+                <div><img src="psd/images/M-8.jpg"  alt="">主题选择</div>
+                <div><img src="psd/images/M-9.jpg"  alt="">应用推荐<img src="psd/images/M-KUANG1.jpg" alt="" class="new"></div>
+                <div><img src="psd/images/M-10.jpg"  alt="">设置与帮助</div>
+            </div>
+        </div>
+    </div>
+    <!--番剧页面结束-->
+    <div data-role="page" id="section"  data-theme="e">
+        <div data-role="header" class="header">
+            <div>
+                <a href="#myPanel4" class="ui-btn ui-corner-all ui-icon-bars ui-btn-icon-notext"></a>
+                <img src="images/touxiang.png" alt="" class="touxiang">
+                <span>未登录</span>
+            </div>
+            <div class="gds">
+                <img src="images/game.png"  alt="">
+                <img src="images/download.png" alt="">
+                <img src="images/search.png"  alt="">
+            </div>
+            <div class="ui-grid-d nav" style="text-align:center">
+                <div class="ui-block-a"><a href="#live" data-transition="flip">直播</a></div>
+                <div class="ui-block-b"><a href="#recommend" data-transition="flip">推荐</a></div>
+                <div class="ui-block-c"><a href="#play" data-transition="flip">番剧</a></div>
+                <div class="ui-block-d"><a href="#section"  class="navs" data-transition="flip">分区</a></div>
+                <div class="ui-block-e"><a href="#find" data-transition="flip">发现</a></div>
+            </div>
+        </div>
+        <div data-role="main" class="mainf">
+            <div class="ui-grid-b solo1 solo3">
+                <div class="ui-block-a"><a href=""><img src="psd/fen1.png"  alt=""><p>直播</p></a></div>
+                <div class="ui-block-b"><a href=""><img src="psd/fen2.png"  alt=""><p>番剧</p></a></div>
+                <div class="ui-block-c"><a href=""><img src="psd/fen3.png"  alt=""><p>动画</p> </a></div>
+                <div class="ui-block-a"><a href=""><img src="psd/fen4.png"  alt=""><p>音乐</p> </a></div>
+                <div class="ui-block-b"><a href=""><img src="psd/fen5.png"  alt=""><p>舞蹈</p></a></div>
+                <div class="ui-block-c"><a href=""><img src="psd/fen6.png"  alt=""><p>游戏</p></a></div>
+                <div class="ui-block-a"><a href=""><img src="psd/images/fen7.jpg" alt=""><p>科技</p> </a></div>
+                <div class="ui-block-b"><a href=""><img src="psd/images/fen8.jpg" alt=""><p>生活</p></a></div>
+                <div class="ui-block-c"><a href=""><img src="psd/images/fen9.jpg" alt=""><p>鬼畜</p></a></div>
+                <div class="ui-block-a"><a href=""><img src="psd/images/fen10.jpg" alt=""><p>时尚</p> </a></div>
+                <div class="ui-block-b"><a href=""><img src="psd/images/fen11.jpg" alt=""><p>广告</p></a></div>
+                <div class="ui-block-c"><a href=""><img src="psd/images/fen12.jpg" alt=""><p>娱乐</p></a></div>
+                <div class="ui-block-a"><a href=""><img src="psd/images/fen13.jpg" alt=""><p>电影</p> </a></div>
+                <div class="ui-block-b"><a href=""><img src="psd/images/fen14.jpg" alt=""><p>电视剧</p></a></div>
+                <div class="ui-block-c"><a href=""><img src="psd/images/fen15.jpg" alt=""><p>游戏中心</p></a></div>
+            </div>
+        </div>
+        <div data-role="panel" id="myPanel4" data-display="overlay" data-position-fixed="true"> 
+            <div class="mhead">
+                <img src="images/touxiang.png" alt="" class="touxiang">
+                <p>点击头像登录</p>
+            </div>
+            <div class="ui-grid-solo solom">
+                <div class="solom1"><img src="psd/images/M-1.jpg"  alt="">首页</div>
+                <div><img src="psd/images/M-2.jpg"  alt="">我的大会员<img src="psd/images/M-NEW.jpg" alt="" class="new"></div>
+                <div><img src="psd/images/M-3.jpg"  alt="">离线缓存</div>
+            </div>
+            <div class="ui-grid-solo solom">
+                <div class=""><img src="psd/images/M-4.jpg"  alt="">我的收藏</div>
+                <div><img src="psd/images/M-5.jpg"  alt="">历史记录</div>
+                <div><img src="psd/images/M-6.jpg"  alt="">关注的人</div>
+                <div><img src="psd/images/M-7.jpg"  alt="">我的钱包</div>
+            </div>
+            <div class="ui-grid-solo solom">
+                <div><img src="psd/images/M-8.jpg"  alt="">主题选择</div>
+                <div><img src="psd/images/M-9.jpg"  alt="">应用推荐<img src="psd/images/M-KUANG1.jpg" alt="" class="new"></div>
+                <div><img src="psd/images/M-10.jpg"  alt="">设置与帮助</div>
+            </div>
+        </div>
+    </div>
+    <!--分区页面结束-->
+    <div data-role="page" id="find"  data-theme="e">
+        <div data-role="header" class="header">
+            <div>
+                <a href="#myPanel5" class="ui-btn ui-corner-all ui-icon-bars ui-btn-icon-notext"></a>
+                <img src="images/touxiang.png" alt="" class="touxiang">
+                <span>未登录</span>
+            </div>
+            <div class="gds">
+                <img src="images/game.png"  alt="">
+                <img src="images/download.png" alt="">
+                <img src="images/search.png"  alt="">
+            </div>
+            <div class="ui-grid-d nav" style="text-align:center">
+                <div class="ui-block-a"><a href="#live" data-transition="flip">直播</a></div>
+                <div class="ui-block-b"><a href="#recommend" data-transition="flip">推荐</a></div>
+                <div class="ui-block-c"><a href="#play" data-transition="flip">番剧</a></div>
+                <div class="ui-block-d"><a href="#section" data-transition="flip">分区</a></div>
+                <div class="ui-block-e"><a href="#find" class="navs" data-transition="flip">发现</a></div>
+            </div>
+        </div>
+        <div data-role="main" class="main5">
+            <form action="" method="post" class="ui-content ">
+                <label for="" class="ui-hidden-accessible">搜索</label>
+                <input type="text" placeholder="搜索">
+            </form>
+            <h4>大家都在搜</h4>
+            <div class="ui-grid-solo-c solo6 ui-content">
+                <div class="ui-block-a"><a href="">极乐净土</a></div>
+                <div class="ui-block-b"><a href="">ppap</a></div>
+                <div class="ui-block-c"><a href="">法医秦明</a></div>
+                <div class="ui-block-d"><a href="">污咚采访间</a></div>
+                <div class="ui-block-a"><a href="">一年生</a></div>
+                <div class="ui-block-b"><a href="">吃货木下</a></div>
+                <div class="ui-block-c"><a href="">不可抗力</a></div>
+                <div class="ui-block-d"><a href="">暴走大事件</a></div>
+            </div>
+            <h6><a href="">查看更多</a></h6>
+            <div class="clear"></div>
+            <div class="ui-grid-solo solo1">
+                <div class="ui-block-a"><a href=""><img src="images/f-x.jpg"  alt="">  兴趣圈<p>></p></a></div>
+                <div class=""><a href=""><img src="images/f-x.jpg" alt="">  话题中心<p>></p></a></div>
+                <div class=""><a href=""><img src="images/f-x.jpg" alt="">  活动中心<p>></p></a></div>
+            </div>
+            <div class="ui-grid-solo solo1">
+                <div class="ui-block-a"><a href=""><img src="images/f-x.jpg"  alt="">  兴趣圈<p>></p></a></div>
+                <div class=""><a href=""><img src="images/f-x.jpg" alt="">  话题中心<p>></p></a></div>
+                <div class=""><a href=""><img src="images/f-x.jpg" alt="">  活动中心<p>></p></a></div>
+            </div>
+            <div class="ui-grid-solo solo1 solo2">
+                <div class="ui-block-a"><a href=""><img src="images/f-x.jpg"  alt="">  原创排行榜<p>></p></a></div>
+                <div class=""><a href=""><img src="images/f-x.jpg"  alt="">  全区排行榜<p>></p></a></div>
+            </div>
+        </div>
+        <div data-role="panel" id="myPanel5" data-display="overlay" data-position-fixed="true"> 
+            <div class="mhead">
+                <img src="images/touxiang.png" alt="" class="touxiang">
+                <p>点击头像登录</p>
+            </div>
+            <div class="ui-grid-solo solom">
+                <div class="solom1"><img src="psd/images/M-1.jpg"  alt="">首页</div>
+                <div><img src="psd/images/M-2.jpg"  alt="">我的大会员<img src="psd/images/M-NEW.jpg" alt="" class="new"></div>
+                <div><img src="psd/images/M-3.jpg"  alt="">离线缓存</div>
+            </div>
+            <div class="ui-grid-solo solom">
+                <div class=""><img src="psd/images/M-4.jpg"  alt="">我的收藏</div>
+                <div><img src="psd/images/M-5.jpg"  alt="">历史记录</div>
+                <div><img src="psd/images/M-6.jpg"  alt="">关注的人</div>
+                <div><img src="psd/images/M-7.jpg"  alt="">我的钱包</div>
+            </div>
+            <div class="ui-grid-solo solom">
+                <div><img src="psd/images/M-8.jpg"  alt="">主题选择</div>
+                <div><img src="psd/images/M-9.jpg"  alt="">应用推荐<img src="psd/images/M-KUANG1.jpg" alt="" class="new"></div>
+                <div><img src="psd/images/M-10.jpg"  alt="">设置与帮助</div>
+            </div>
+        </div>
+    </div>
+    <!--发现页面结束-->
+</body>
+</html>
