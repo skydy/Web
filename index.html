@@ -138,6 +138,10 @@
         }
         //调用
         CanvasParticle(config);
+        var clienw=document.documentElement.clientWidth;
+        if(clienw<700){
+            $("canvas").css("display","none")
+        }
     }
   </script>
   <script type="text/javascript" src="js/canvas-particle.js"></script>
