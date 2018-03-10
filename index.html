@@ -138,8 +138,8 @@
         }
         //调用
         CanvasParticle(config);
-        var clienw=document.documentElement.clientWidth;
-        if(clienw<700){
+        var mobile_flag = isMobile();
+        if(!mobile_flag){
             $("canvas").css("display","none")
         }
     }
