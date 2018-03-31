@@ -32,6 +32,15 @@
     <div class="top" id="top"></div>
     <script>
         $(function(){
+            $("#music").toggle(function(){
+                $("audio")[0].pause();
+                $(this).css("animation-play-state","paused");
+            },function(){
+                $("audio")[0].play();
+                $(this).css("animation-play-state","running");
+            })
+        })
+        $(function(){
             $("#top").click(function(){
                 clickOn()
             });
