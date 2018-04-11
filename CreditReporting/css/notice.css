@@ -1,4 +1,4 @@
-header{position: fixed;top: 0;left: 0;width: 100%;background: white;height: 90px;}
+header{position: fixed;top: 0;left: 0;width: 100%;background: white;height: 200px;}
 header>h1{text-align: center;font-size: 4em;color: #010101;padding-top: 50px;border-bottom: 1px solid #eee;
     padding-bottom:50px;}
 header>h2{font-size: 2em;text-align: center;margin: 12px 10px 0 10px;padding-bottom: 10px;
