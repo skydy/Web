@@ -46,6 +46,6 @@ font-size: 2.5vh;height: 18vh}
 footer ol{float: left;width: 100%;padding-top: 6vh;padding-bottom: 3vh}
 footer ol li input{width: 2vh;height: 3vh}
 footer ol li:first-child{margin-left: 6%;float: left;}
-footer ol li{float:right;font-size: 2vh}
+footer ol li{float:right;font-size: 2vh;list-style: none;}
 footer ol li:nth-child(2){margin-right: 6%;background: #3732FC;color: white;padding: 2px 40px}
 footer ol li:nth-child(3){padding-right: 4%;}
