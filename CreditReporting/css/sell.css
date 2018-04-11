@@ -30,7 +30,9 @@ border-bottom: 3px solid #eee;font-size: 2vh}
     height: 5vw;text-align: center;}
 .con>ul>li>dl>dd>button{width: 5vw;
     height: 5vw;
-    border: 2px solid #c1bfbf;}
+    border: 1px solid #c1bfbf;
+    text-align: center;
+    line-height: 5vw;}
 .dd{margin-left: 9vw}
 .listUl>li{float: left;width: 25%;text-align: center;}
 .listUl{    float: left;
