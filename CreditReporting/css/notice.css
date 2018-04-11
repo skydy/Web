@@ -3,7 +3,7 @@ header>h1{text-align: center;font-size:4vh;color: #010101;padding-top: 20px;bord
     padding-bottom: 10px;}
 header>h2{font-size: 2vh;text-align: center;margin: 12px 10px 0 10px;padding-bottom: 10px;
     border-bottom: 1px solid #ccc;}
-.content{margin: 200px 10px 108px 10px;font-size: 3vh}
+.content{margin: 200px 10px 288px 10px;font-size: 3vh}
 .content>dl>dd{    margin: 4px 0;}
 table{width: 100%}
 table tr th{border: 1px solid #000;text-align: center;}
