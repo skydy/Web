@@ -26,7 +26,7 @@ border-bottom: 3px solid #eee;font-size: 2vh}
 .con>ul>li>dl>dd{float: left;    margin-right: 4vw;}
 .con>ul>li>dl>dt{margin-bottom: 1vh}
 .con>ul>li>dl>dd>input{    width: 5vw;
-    border: 2px solid #c1bfbf;
+    border: 1px solid #c1bfbf;
     height: 5vw;text-align: center;}
 .con>ul>li>dl>dd>button{width: 5vw;
     height: 5vw;
