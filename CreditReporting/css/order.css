@@ -1,0 +1,23 @@
+header h1{text-align: center;font-size: 14px;padding: 18px 0;border-bottom: 2px solid #eee}
+.red{color:#E51C23!important;}
+.disableColor{color: #BEC2C9!important}
+.disableBg{background: #BEC2C9 !important}
+.order1{float: left;
+    width: 100%;
+    margin-top: 10px;padding-bottom: 10px}
+.order1L{float: left;width: 70%}
+.order1R{float: right;width: 28%}
+.order1L>ul>li,.order1L>ul{float: left;}
+.order1L>p{font-size: 14px;margin-top: 10px}
+.order1L>p>span{padding:0 5%;}
+.order1L>p>span:first-child{font-weight: 600}
+.order1L>ul{margin-top: 20px}
+.order1L>ul>li{color: #888;font-size: 9px}
+.order1L>ul>li:nth-child(1),.order1L>ul>li:nth-child(3){margin-left: 8px}
+.order1R button{background: #3732FC;color: white;width: 80px;height: 24px;line-height: 24px;text-align: center;}
+.order1R{margin-top: 20px}
+.order1:nth-child(odd){border-bottom: 1px solid #eee }
+.orderList{clear: both}
+.orderList>p{margin-left: 20px}
+.orderList>p:last-child{margin:0 auto;width: 96%}
+.orderList>p:last-child>img{width: 100%;}
