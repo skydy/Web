@@ -1,0 +1,50 @@
+ul li{list-style: none}
+body{position:relative}
+header{    position: fixed;
+    top: 0;
+    left: 0;
+    background: white;
+    width: 100%;height: 10vh}
+header h1{    padding: 3vh;
+    color: #000;
+    font-weight: 900;
+border-bottom: 3px solid #eee;font-size: 2vh}
+.red{color: red}
+.con{font-size: 2vh;    width: 88%;
+    margin: 0 auto;display: table;margin-top: 10vh;margin-bottom: 18vh
+}
+.con>ul{float: left;}
+.con>ul>li>input{    float: left;
+    height: 3vh;
+    width: 2vh;margin-right: 2vw}
+.con>ul>li{    float: left;
+    width: 100%;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    border-bottom: 1px solid #c7c7c7;}
+.con>ul>li>dl>dd{float: left;    margin-right: 4vw;}
+.con>ul>li>dl>dt{margin-bottom: 1vh}
+.con>ul>li>dl>dd>input{    width: 5vw;
+    border: 2px solid #c1bfbf;
+    height: 5vw;text-align: center;}
+.con>ul>li>dl>dd>button{width: 5vw;
+    height: 5vw;
+    border: 2px solid #c1bfbf;}
+.dd{margin-left: 9vw}
+.listUl>li{float: left;width: 25%;text-align: center;}
+.listUl{    float: left;
+    width: 100%;
+    margin-bottom: 10px;}
+    ul li{list-style: none}
+footer{    position: fixed;
+    bottom: 0;
+    left: 0;
+    background: white;
+    width: 100%;
+font-size: 2.5vh;height: 18vh}
+footer ol{float: left;width: 100%;padding-top: 6vh;padding-bottom: 3vh}
+footer ol li input{width: 2vh;height: 3vh}
+footer ol li:first-child{margin-left: 6%;float: left;}
+footer ol li{float:right;font-size: 2vh}
+footer ol li:nth-child(2){margin-right: 6%;background: #3732FC;color: white;padding: 2px 40px}
+footer ol li:nth-child(3){padding-right: 4%;}

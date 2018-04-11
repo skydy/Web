@@ -1,0 +1,24 @@
+.red{color: red}
+.con>h2{text-align: center;margin-top: 10vh;font-size: 2vh;}
+.con>h3{text-align: center;;margin-top: 6vh;font-size: 2vh}
+.con>p>input{width: 2vh;
+    height: 3vh;
+    float: left;}
+.con>p>label{font-size: 2vh;font-weight: 100}
+.con>p{margin-left: 10%}
+.p1{margin-top: 6vh}
+ul li{list-style: none}
+.con ul li{font-size: 2vh;margin-left: 10%}
+.con button{background: #3732FC ;color: white;padding: 2px ;padding: 1vh 4vh;
+    font-size: 2vh;display: table;margin:0 auto;margin-top: 6vh;border: 0 none}
+    footer{    position: fixed;
+    bottom: 0;
+    left: 0;
+    background: white;
+    width: 100%;
+font-size: 2.5vh}
+.listUl>li{float: left;width: 25%;text-align: center;}
+.listUl{    float: left;
+    width: 100%;
+    margin-bottom: 10px;}
+    
