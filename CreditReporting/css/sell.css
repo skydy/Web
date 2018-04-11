@@ -1,4 +1,5 @@
 ul li{list-style: none}
+ol li{list-style:none}
 body{position:relative}
 header{    position: fixed;
     top: 0;
