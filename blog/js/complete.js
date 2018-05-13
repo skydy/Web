@@ -4,7 +4,7 @@ var flag=0;//限制抽奖次数
 $(function(){
     //获取九宫格奖品信息
     $.ajax({
-        url:"demo.json",
+        url:"http://dingyang.win/blog/demo.json",
         type:"POST",
         dataType:"json",
         async: true,  
@@ -22,7 +22,7 @@ $(function(){
         flag++
         if(flag<=3){
             $.ajax({
-                url:"demo.json",
+                url:"http://dingyang.win/blog/demo.json",
                 type:"POST",
                 dataType:"json",
                 async: true,  
