@@ -6,7 +6,8 @@ $(function(){
     $.ajax({
         url:"http://dingyang.win/blog/js/demo.json",
         type:"POST",
-        dataType:"json",
+        dataType:"jsonp",
+        jsonpCallback:"callback",
         async: true,  
         success:function(data){
             var arryNum = data.arry;
@@ -24,7 +25,8 @@ $(function(){
             $.ajax({
                 url:"http://dingyang.win/blog/js/demo.json",
                 type:"POST",
-                dataType:"json",
+                dataType:"jsonp",
+                jsonpCallback:"callback",
                 async: true,  
                 success:function(data){
                     value = data.num;
