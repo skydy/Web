@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <!-- a标签点击打开的动作，在click事件中注册 -->
+<a href="javascript:;" id="openApp">贴吧客户端</a>
+<script type="text/javascript">
+    document.getElementById('openApp').onclick = function(e){
+        // 通过iframe的方式试图打开APP，如果能正常打开，会直接切换到APP，并自动阻止js其他行为
+        
+        var ifr = document.createElement('iframe');
+        ifr.src = 'com.baidu.tieba://';//打开app的协议，有app同事提供
+        ifr.style.display = 'none';
+        document.body.appendChild(ifr);
+        window.setTimeout(function(){
+            document.body.removeChild(ifr);
+　　　　　　　window.location.href = "https://itunes.apple.com/cn/app/id477927812";//打开app下载地址，有app同事提供
+        },2000)
+    };
+</script>
+</body>
+</html>
