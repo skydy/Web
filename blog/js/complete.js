@@ -1,38 +1,42 @@
 var click=false;
-var value;//中奖位置
-var flag=0;//限制抽奖次数
+var value=3;//中奖位置
+var flag=1;//限制抽奖次数
 $(function(){
     //获取九宫格奖品信息
-    $.ajax({
-        url:"http://dingyang.win/blog/js/demo.json",
+/*    $.ajax({
+        url:"js/demo.json",
         type:"POST",
+        // dataType:"json",
         dataType:"jsonp",
-        jsonpCallback:"callback",
+        jsonpCallback:"call",
         async: true,  
         success:function(data){
+            flag=data.val;
             var arryNum = data.arry;
             var imgSrc=data.imgsrc;
             for(var i=0;i<=arryNum.length;i++){
-                $(".lottery-unit-"+i).children("p").text(arryNum[i])
-                $(".lottery-unit-"+i).children("img").attr("src","img/"+imgSrc[i])
+                // $(".lottery-unit-"+i).children("p").text(arryNum[i])
+                $(".lottery-unit-"+i).children("img").attr("src",imgSrc[i])
             }
+            $(".lottery-unit-complete img").attr("src",data.completeImgSrc)
         }
-    })
+    })*/
     lottery.init('lottery');
-    $("#lottery a").click(function(){ 
+    $("#lottery .lottery-unit-complete").click(function(){ 
         flag++
         if(flag<=3){
-            $.ajax({
-                url:"http://dingyang.win/blog/js/demo.json",
+           /* $.ajax({
+                url:"js/demo.json",
+                // url:"http://dingyang.win/blog/js/demo.json",
                 type:"POST",
                 dataType:"jsonp",
-                jsonpCallback:"callback",
+                jsonpCallback:"call",
                 async: true,  
                 success:function(data){
-                    value = data.num;
-                    return value
+                    var numVal = data.num;
+                    value = numVal;
                 }
-            })
+            })*/
             if (click){
                 return false;
             }else{
@@ -42,7 +46,7 @@ $(function(){
                 return false;
             }
         }else{
-            alert("今天到此为止")
+            alert("今天抽奖次数没有啦！")
         } 
     });
 })
@@ -60,19 +64,19 @@ var lottery={
             $units = $lottery.find(".lottery-unit");
             this.obj = $lottery;
             this.count = $units.length;
-            $lottery.find(".lottery-unit-"+this.index).addClass("active");
+            $lottery.find(".lottery-unit-"+this.index).children("em").addClass("active");
         };
     },
     roll:function(){
         var index = this.index;
         var count = this.count;
         var lottery = this.obj;
-        $(lottery).find(".lottery-unit-"+index).removeClass("active");
+        $(lottery).find(".lottery-unit-"+index).children("em").removeClass("active");
         index += 1;
         if (index>count-1) {
             index = 0;
         };
-        $(lottery).find(".lottery-unit-"+index).addClass("active");
+        $(lottery).find(".lottery-unit-"+index).children("em").addClass("active");
         this.index=index;
         return false;
     },
@@ -90,8 +94,12 @@ function roll(){
         lottery.times=0;
         click=false;
         setTimeout(function(){
-            var abc=$(".lottery-unit-"+value).children("p").text()
-            alert("恭喜你获得"+abc+"等奖")
+            // var abc=$(".lottery-unit-"+value).children("p").text()
+            // alert("恭喜你获得"+abc+"等奖")
+            var imgsrc=$(".lottery-unit-"+value).children("img").attr("src");
+            $(".maskInfo img").attr("src",imgsrc)
+            $("#mask").fadeIn();
+            $("body").addClass("hidden")
         },1000)
     }else{
         if (lottery.times<lottery.cycle) {
@@ -112,4 +120,9 @@ function roll(){
         lottery.timer = setTimeout(roll,lottery.speed);
     }
     return false;
+}
+
+function closeMask(){
+    $("#mask").fadeOut();
+    $("body").removeClass("hidden")
 }
