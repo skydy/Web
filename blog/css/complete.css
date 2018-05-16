@@ -1,8 +1,109 @@
-*{margin:0;padding: 0}
-#lottery{width:574px;height:584px;margin:20px auto 0;background:url(images/bg.jpg) no-repeat;padding:50px 55px;}
-#lottery table td{width:142px;height:142px;text-align:center;vertical-align:middle;font-size:24px;color:#333;font-index:-999}
-#lottery table td a{display:block;text-decoration:none;}
-#lottery table td.active{background:rgba(0,0,0,0.5)!important;color: white}
+*{margin:0;padding: 0;}
+a{text-decoration: none;color: #000}
+ul li{list-style: none}
+html { font-size: 11px;}
+@media (min-width: 376px) and (max-width: 414px) {
+  html{font-size: 12px;}
+}
+@media (min-width: 415px) and (max-width: 639px) {
+  html{font-size: 14px;}
+}
+@media (min-width: 640px) and (max-width: 719px) {
+  html{font-size: 15px;}
+}
+@media (min-width: 720px) and (max-width: 749px) {
+  html{font-size: 16px;}
+}
+@media (min-width: 750px) and (max-width: 799px) {
+  html{font-size: 17px;}
+}
+@media (min-width: 800px) and (max-width: 992px) {
+  html{font-size: 21px;}
+}
+@media (min-width: 993px) and (max-width: 1366px) {
+  html{font-size: 30px;}
+}
+body {
+  margin: 0;
+  font-size: 1.2rem;
+}
+#lottery{display: table;margin: 0 auto;padding-top:45%;}
+#lottery table{margin: 5vw}
+#lottery table td{width: 18.7vw;
+display: inline-table;
+height: 17vw;
+background: #ffd2b3;
+border-radius: 1.8vw;margin-top: 0.4vw;overflow: hidden;}
+#lottery table td a{display: block;width: 100%;text-align: center;text-decoration: none;color: #000}
+#lottery table td .active{background:rgba(0,0,0,0.3)!important;color: white}
 .lottery-unit>img{width: 100%;}
 .lottery-unit{position: relative;}
 .lottery-unit>p{position: absolute;text-align: center;width: 100%}
+.lottery-unit-complete img{
+    width: 100%;
+margin: 0 auto;
+display: block;}
+.lottery-unit-complete a:active{background: pink!important}
+.lotteryCon{float: left;background: url(../img/contentbg.png) no-repeat;
+    background-size: 100%}
+html{width: 100%;height: 100%}
+html{background: #d50a7d;}
+body{background: url(../img/bodybg.png) no-repeat;
+    background-size: 100%;width: 100%}
+#lottery>p{text-align: center;margin-bottom: 6%;color: white;font-size: 1.2rem;}
+#lottery>p>span{font-size: 1.8rem;color: #ffff00}
+.lottery-unit em{width: 100%;
+height: 100%;
+display: block;
+position: absolute;
+top: 0;border-radius: 1.8vw;}
+.leftbtn{
+    width: 50%;
+    height: 6vw;
+    background: url(../img/leftbtn.png) no-repeat right;
+    background-size: contain;
+    float: left;}
+.rightbtn{
+    width: 40%;
+    height: 6vw;
+    background: url(../img/rightbtn.png) no-repeat center;
+    background-size: contain;
+    margin: 0 auto}
+#con{
+height: 6vw;}
+#foot{width: 76%;
+    margin:0 auto;
+    color: white;
+    padding: 8% 0}
+#foot>p{text-align: center;font-size: 1.2rem;padding-bottom: 4%}
+#foot>ul>li{font-size: 1rem}
+#mask{width: 100%;overflow: hidden;background: rgba(0,0,0,0.3);position:absolute;top:0;z-index: 9999;padding-top: 16%;display: none}
+/*.hidden{overflow: hidden;}*/
+.maskInfo{width: 50vw;
+height: 62vw;
+background: white;
+margin: 0 auto;
+    margin-top: 0px;
+margin-top: 42%;
+border-radius: 3vw}
+.maskInfo>p{font-size: 2rem;font-weight: 100 }
+.maskInfo>p>span{float: right;margin-right: 3vw;cursor: pointer;}
+.maskInfo>h1{clear: both;font-size: 1.8rem;
+color: #df0000;
+font-weight: 100;
+text-align: center;}
+.maskInfo>img{width: 66%;
+margin: 0 auto;
+display: table;margin-top: 3vw;
+margin-bottom: 3vw;}
+.maskInfo>div{width: 66%;margin:0 auto;}
+.maskInfo>div>a{display: block;
+width: 100%;
+background: #ff4a1a;
+color: white;
+text-align: center;
+margin-top: 6%;
+height: 7vw;
+line-height: 7vw;
+border-radius: 4vw;
+font-size: 1.4rem}
