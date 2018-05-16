@@ -27,13 +27,16 @@ body {
   margin: 0;
   font-size: 1.2rem;
 }
-#lottery{display: table;margin: 0 auto;padding-top:45%;}
-#lottery table{margin: 5vw}
-#lottery table td{width: 18.7vw;
+#lottery{display: table;margin: 0 auto;padding-top:40%;}
+#lottery table{margin: 8vw}
+#lottery table td{width: 22vw;
 display: inline-table;
-height: 17vw;
+height: 22vw;
 background: #ffd2b3;
-border-radius: 1.8vw;margin-top: 0.4vw;overflow: hidden;}
+border-radius: 1.8vw;
+margin: 0.4vw;
+overflow: hidden;
+float: left;  }
 #lottery table td a{display: block;width: 100%;text-align: center;text-decoration: none;color: #000}
 #lottery table td .active{background:rgba(0,0,0,0.3)!important;color: white}
 .lottery-unit>img{width: 100%;}
@@ -50,7 +53,7 @@ html{width: 100%;height: 100%}
 html{background: #d50a7d;}
 body{background: url(../img/bodybg.png) no-repeat;
     background-size: 100%;width: 100%}
-#lottery>p{text-align: center;margin-bottom: 6%;color: white;font-size: 1.2rem;}
+#lottery>p{text-align: center;margin-bottom: 1%;color: white;font-size: 1.4rem;}
 #lottery>p>span{font-size: 1.8rem;color: #ffff00}
 .lottery-unit em{width: 100%;
 height: 100%;
@@ -65,7 +68,7 @@ top: 0;border-radius: 1.8vw;}
     float: left;}
 .rightbtn{
     width: 40%;
-    height: 6vw;
+    height: 8vw;
     background: url(../img/rightbtn.png) no-repeat center;
     background-size: contain;
     margin: 0 auto}
@@ -75,19 +78,23 @@ height: 6vw;}
     margin:0 auto;
     color: white;
     padding: 8% 0}
-#foot>p{text-align: center;font-size: 1.2rem;padding-bottom: 4%}
+#foot>p{text-align: center;font-size: 1.4rem;padding-bottom: 4%}
 #foot>ul>li{font-size: 1rem}
 #mask{width: 100%;overflow: hidden;background: rgba(0,0,0,0.3);position:absolute;top:0;z-index: 9999;padding-top: 16%;display: none}
 /*.hidden{overflow: hidden;}*/
 .maskInfo{width: 50vw;
-height: 62vw;
+height: 70vw;
 background: white;
 margin: 0 auto;
     margin-top: 0px;
 margin-top: 42%;
 border-radius: 3vw}
 .maskInfo>p{font-size: 2rem;font-weight: 100 }
-.maskInfo>p>span{float: right;margin-right: 3vw;cursor: pointer;}
+.maskInfo>p>span{float: right;
+cursor: pointer;
+width: 14vw;
+height: 14vw;
+text-align: center;line-height: 14vw}
 .maskInfo>h1{clear: both;font-size: 1.8rem;
 color: #df0000;
 font-weight: 100;
@@ -107,3 +114,4 @@ height: 7vw;
 line-height: 7vw;
 border-radius: 4vw;
 font-size: 1.4rem}
+.lottery-unit-complete{background:transparent!!important;}
