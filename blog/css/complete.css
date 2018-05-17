@@ -28,10 +28,10 @@ body {
   font-size: 1.2rem;
 }
 #lottery{display: table;margin: 0 auto;padding-top:40%;}
-#lottery table{margin: 5.5vw}
-#lottery table td{width: 22vw;
+#lottery table{margin: 5.8vw}
+#lottery table td{width: 23.4vw;
 display: inline-table;
-height: 22vw;
+height: 23.4vw;
 background: #ffd2b3;
 border-radius: 1.8vw;
 margin: 0.4vw;
@@ -73,7 +73,7 @@ top: 0;border-radius: 1.8vw;}
     background-size: contain;
     margin: 0 auto}
 #con{
-height: 8vw;margin-top:7.5vw}
+height: 8vw;margin-top:4.5vw}
 #foot{width: 76%;
     margin:0 auto;
     color: white;
