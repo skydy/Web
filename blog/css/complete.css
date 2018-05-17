@@ -79,7 +79,8 @@ height: 8vw;margin-top:6.4vw}
     color: white;
     padding: 8% 0}
 #foot>p{text-align: center;font-size: 1.4rem;padding-bottom: 4%}
-#foot>ul>li{font-size: 1rem}
+#foot>ul>li{font-size: 1.2rem;
+line-height: 2rem;}
 #mask{width: 100%;overflow: hidden;background: rgba(0,0,0,0.3);position:absolute;top:0;z-index: 9999;padding-top: 16%;display: none}
 .hidden{overflow: hidden;}
 .maskInfo{width: 50vw;
