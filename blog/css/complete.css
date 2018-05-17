@@ -28,7 +28,7 @@ body {
   font-size: 1.2rem;
 }
 #lottery{display: table;margin: 0 auto;padding-top:40%;}
-#lottery table{margin: 6.6vw}
+#lottery table{margin: 5.5vw}
 #lottery table td{width: 22vw;
 display: inline-table;
 height: 22vw;
