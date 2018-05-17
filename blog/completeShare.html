@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/completeShare.css">
+    <script src="js/jquery-1.8.3.js"></script>
+</head>
+<body>
+    <div class="content">
+        <p>你的好友<span>林洛雪</span></p>
+        <h4>邀请你帮TA抽奖</h4>
+    </div>
+    <div class="con1">
+        <form id="form1" onsubmit="return false" action="##" method="post">
+            <input class="input1" type="text" placeholder="请输入手机号">
+            <input class="input2" type="text" placeholder="请设置密码">
+            <div class="divqr"><input class="input3" type="text" placeholder="验证码"><div onclick="verificationCode()">获取验证码</div></div>
+            <div onclick="registerDB()" class="con1btn">分享好运立即抽奖</div>
+        </form>
+    </div>
+    <div class="con2" style="display:none">
+        <p></p>
+        <div class="con1btn2"><a href="#">立即抽奖</a></div>
+    </div>
+    <div id="lottery">
+        <div class="lotteryCon">
+            <table border="0" cellpadding="0"  cellspacing="0px">
+                <tr>
+                    <td class="lottery-unit lottery-unit-0">
+                        <img src="img/1.png" alt="" />
+                        <em></em>
+                    </td>
+                    <td class="lottery-unit lottery-unit-1">
+                        <img src="img/2.png" alt="" />
+                        <em></em>
+                    </td>
+                    <td class="lottery-unit lottery-unit-2">
+                        <img src="img/3.png" alt="" />
+                        <em></em>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="lottery-unit lottery-unit-7">
+                        <img src="img/4.png" alt="" />
+                        <em></em>
+                    </td>
+                    <td class="lottery-unit-complete none">
+                        <img src="img/9.png" alt="">
+                    </td>
+                    <td class="lottery-unit lottery-unit-3">
+                        <img src="img/5.png" alt="" />
+                        <em></em>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="lottery-unit lottery-unit-6">
+                        <img src="img/6.png" alt="" />
+                        <em></em>
+                    </td>
+                    <td class="lottery-unit lottery-unit-5">
+                        <img src="img/7.png" alt="" />
+                        <em></em>
+                    </td>
+                    <td class="lottery-unit lottery-unit-4">
+                        <img src="img/8.png" alt="" />
+                        <em></em>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div id="mask">
+        <div class="maskInfo">
+            <p><span onclick="closeMask()">&times;</span></p>
+            <h1>恭喜你获得</h1>
+            <img src=""  alt="">
+            <div><a href="downLoad()">查看我的奖品</a></div>
+        </div>
+    </div>
+</body>
+</html>
+<script>
+    function downLoad(){
+        var u = navigator.userAgent;
+        var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Adr') > -1;
+        var isIOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/);
+          // 是安卓浏览器
+          if (isAndroid) {
+              location.href='http://www.cucrxt.com/static/jslib/xintiao.apk'; // 跳安卓端下载地址
+          }
+          // 是iOS浏览器
+          if (isIOS) {
+              location.href = 'https://itunes.apple.com/cn/app/id1341570459'; // 跳AppStore下载地址
+          }
+        
+    }
+    $(function(){
+        var w=document.body.clientWidth;
+        var h=w*1.6;
+        $("body").css("height",h+"px")
+    })
+    $(window).resize(function(){ 
+        var w=document.body.clientWidth;
+        var h=w*1.7;
+        $("body").css("height",h+"px")
+    })
+    $(".con1 div").click(function(){
+        $(".con1").hide()
+        $(".con2").fadeIn()
+    })
+    $(function(){
+        var w=document.body.clientWidth;
+        var h=w*1.6;
+        $("body").css("height",h+"px")
+    })
+    $(window).resize(function(){ 
+        var w=document.body.clientWidth;
+        var h=w*1.7;
+        $("body").css("height",h+"px")
+    })
+    $(".con1 .con1btn").click(function(){
+        $(".con1").hide()
+        $(".con2").fadeIn()
+    })
+</script>
