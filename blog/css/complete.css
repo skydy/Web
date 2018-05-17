@@ -81,7 +81,7 @@ height: 6vw;}
 #foot>p{text-align: center;font-size: 1.4rem;padding-bottom: 4%}
 #foot>ul>li{font-size: 1rem}
 #mask{width: 100%;overflow: hidden;background: rgba(0,0,0,0.3);position:absolute;top:0;z-index: 9999;padding-top: 16%;display: none}
-/*.hidden{overflow: hidden;}*/
+.hidden{overflow: hidden;}
 .maskInfo{width: 50vw;
 height: 70vw;
 background: white;
@@ -94,7 +94,7 @@ border-radius: 3vw}
 cursor: pointer;
 width: 14vw;
 height: 14vw;
-text-align: center;line-height: 14vw}
+text-align: center;line-height: 14vw;font-size: 3.4rem;}
 .maskInfo>h1{clear: both;font-size: 1.8rem;
 color: #df0000;
 font-weight: 100;
@@ -114,4 +114,4 @@ height: 7vw;
 line-height: 7vw;
 border-radius: 4vw;
 font-size: 1.4rem}
-.lottery-unit-complete{background:transparent!!important;}
+.lottery-unit-complete{background:transparent!important;} 
