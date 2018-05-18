@@ -85,15 +85,45 @@
     <script type="text/javascript" src="js/jquery-1.8.3.js"></script>
     <script type="text/javascript" src="js/complete.js"></script>
     <script>
-    $(function(){
+       //获取屏幕尺寸进行适配
+    function adjustSize(){
         var w=document.body.clientWidth;
         var h=document.body.clientHeight;
+        console.log(w)
         $("#mask").css("height",h+"px")
+    }
+
+
+
+    function browserRedirect() {  
+       var sUserAgent = navigator.userAgent.toLowerCase();  
+       var bIsIpad = sUserAgent.match(/ipad/i) == "ipad";  
+       var bIsIphoneOs = sUserAgent.match(/iphone os/i) == "iphone os";  
+       var bIsMidp = sUserAgent.match(/midp/i) == "midp";  
+       var bIsUc7 = sUserAgent.match(/rv:1.2.3.4/i) == "rv:1.2.3.4";  
+       var bIsUc = sUserAgent.match(/ucweb/i) == "ucweb";  
+       var bIsAndroid = sUserAgent.match(/android/i) == "android";  
+       var bIsCE = sUserAgent.match(/windows ce/i) == "windows ce";  
+       var bIsWM = sUserAgent.match(/windows mobile/i) == "windows mobile";  
+       if (bIsIpad || bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsCE || bIsWM) {                  
+           //手机端  
+            $("link").remove()
+            $("head").append('<link rel="stylesheet" href="css/complete.css">') 
+        } else {          
+            //pc端  
+            $("link").remove()
+            $("head").append('<link rel="stylesheet" href="css/demo.css">') 
+         
+           }  
+       }  
+
+    $(function(){
+        adjustSize()
+        browserRedirect()
     })
     $(window).resize(function(){ 
-        var w=document.body.clientWidth;
-        var h=document.body.clientHeight;
-        $("#mask").css("height",h+"px")
+        adjustSize()
+        browserRedirect()
     })
     </script>
 </body>
