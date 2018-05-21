@@ -62,11 +62,14 @@ body {
 
 
 .none{ pointer-events: none;}
-#lottery{display: table;margin: 0 auto;padding-top:12%;padding-bottom: 15%;}
-#lottery table{margin: 8vw}
-#lottery table td{width: 22vw;
+#lottery{display: table;
+    margin: 0 auto;
+    padding-top: 15vw;
+    padding-bottom: 15vw;}
+#lottery table{margin: 6.6vw}
+#lottery table td{width: 23vw;
 display: inline-table;
-height: 22vw;
+height: 23vw;
 background: #ffd2b3;
 border-radius: 1.8vw;
 margin: 0.4vw;
@@ -96,7 +99,7 @@ margin: 0 auto;}
 .input2{margin-top:3vw;margin-bottom:3vw}
 .divqr input{width: 49%;
 height: 8vw;
-border-radius: 8vw;
+border-radius: 8vw;font-size: 1.4rem;
 border: 0 none;background: #f147b3;color: #ffd0ee;text-align: center;}
 .divqr div{float: right;
 height: 8vw;
@@ -115,8 +118,7 @@ border-radius: 8vw;
 margin: 0 auto;
 margin-top: 0px;
 margin-top: 10vw;}
-#mask{width: 100%;overflow: hidden;background: rgba(0,0,0,0.3);position:absolute;top:0;z-index: 9999;padding-top: 16%;display: none;padding-bottom: 12%;
-    height: 100%;}
+#mask{width: 100%;overflow: hidden;background: rgba(0,0,0,0.3);position:absolute;top:0;z-index: 9999;padding-top: 16%;display: none;padding-bottom: 24%;}
 /*.hidden{overflow: hidden;}*/
 .maskInfo{width: 50vw;
 height: 70vw;
@@ -151,3 +153,21 @@ line-height: 7vw;
 border-radius: 4vw;
 font-size: 1.4rem}
 .lottery-unit-complete{background:transparent!important;}
+input{outline: none;}
+
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {   
+ /* WebKit browsers */   
+color:#ffd0ee;   
+}   
+input:-moz-placeholder, textarea:-moz-placeholder {   
+/* Mozilla Firefox 4 to 18 */   
+color:#ffd0ee;   
+}   
+input::-moz-placeholder, textarea::-moz-placeholder {   
+ /* Mozilla Firefox 19+ */   
+color:#ffd0ee;   
+}   
+input:-ms-input-placeholder, textarea:-ms-input-placeholder {   
+ /* Internet Explorer 10+ */   
+color:#ffd0ee;   
+}
