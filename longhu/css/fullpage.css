@@ -1,0 +1,343 @@
+.section1img{position: absolute;
+    width: 80%;
+    left: 10%;}
+.left { transition: all 1.5s;}
+.left{opacity: 1; transition-delay: 0.7s;}
+
+.section2img2{position: absolute;
+    width: 40%;
+    top: 5vw;
+    left: 5vw;}
+.section2img3{    position: absolute;
+    width: 66%;
+    left: 17%;
+    top: 30%;}
+
+.displayHide{display: none}
+.displayShow{display: block;}
+.section2img4{    position: absolute;
+    width: 66%;
+    left: 17%;
+    bottom:6%;}
+.section3img3{    position: absolute;
+    width: 30%;
+    left: 33%;
+    top: 30%;}
+.section3img4{position: absolute;
+    width: 80%;
+    left: 10%;
+    top: 28%;}
+.section3img5{position: absolute;
+    width: 80%;
+    left: 10%;
+    top: 78%;}
+.section4img3{    position: absolute;
+    left: 8%;
+    top:26%;
+    width: 30%;}
+.section4img4{       position: absolute;
+    right: 2%;
+    top: 40%;
+    width: 80%;}
+.section4img5{    position: absolute;
+    left: 16%;
+    top: 0;
+    height: 100%;}
+
+.active .ng666 { opacity: 1; transition-delay: 1.7s;}
+.ng666 {opacity: 0; transition: all 1.7s;}
+.section5img3{  position: absolute;
+    top: 25%;
+    width: 80%;
+    left: 10%;}
+.section5img4{     position: absolute;
+    top: 49%;
+    width: 60%;
+    left: 20%;}
+.bg3bg3{position: absolute; left:0;
+    top: 0;
+    height: 100%;}
+.active .bg3bg3{opacity: 1; transition-delay: 1.7s;}
+.bg3bg3 {opacity: 0; transition: all 1.7s;}
+.section6img3{    position: absolute;
+    right: 0;
+    top: 5%;
+    width:100%;}
+.section6img4{position: absolute;
+    width: 20%;
+    left: 40%;
+    top: 14%;}
+.section6img5{position: absolute;
+    width: 36%;
+    left: 33%;
+    top: 26%;}
+.section6img6{position: absolute;
+    width: 36%;
+    left: 33%;
+    top:55%;}
+.active .ng661 { opacity: 1; transition-delay: 0.7s;}
+.ng661 {opacity: 0; transition: all 0.7s;}
+.active .ng662 { opacity: 1; transition-delay: 1.2s;}
+.ng662 {opacity: 0; transition: all 1.2s;}
+
+.bgH52{position: absolute;width: 30%;
+    right: 18%;
+    top: 26%;}
+.bgH53{position: absolute;width: 38%;
+    left: 20%;
+    top: 50%;}
+
+
+ .ng6l{   position: absolute;width: 40%;
+    left:30%;
+    top: 0%;
+    transition: all 1.7s;
+    opacity: 0;
+    }
+.active .ng6l {top:5%;opacity: 1; transition-delay: 1.7s;}
+
+ .ng7l{position: absolute;width: 80%;
+    right: -18%;
+    top: 26%;
+    transition: all 1.7s;
+    opacity: 0;
+    }
+.active .ng7l {right: 10%;opacity: 1; transition-delay: 1.7s;}
+
+ .ng77l{position: absolute;width: 60%;
+    right: -18%;
+    top: 20%;
+    transition: all 1.7s;
+    opacity: 0;
+    }
+.active .ng77l {right: 20%;opacity: 1; transition-delay: 1.7s;}
+
+.ng8l{   position: absolute;width: 50%;
+    left: -20%;
+    top: 42%;
+    transition: all 1.7s;
+    opacity: 0;
+    }
+.active .ng8l {left:25%;opacity: 1; transition-delay: 1.7s;}
+
+.ng88l{   position: absolute;width: 80%;
+    left: -20%;
+    top: 30%;
+    transition: all 1.7s;
+    opacity: 0;
+    }
+.active .ng88l {left:10%;opacity: 1; transition-delay: 1.7s;}
+
+.ng9l{   position: absolute;width: 50%;
+    left: 25%;
+    bottom: -42%;
+    transition: all 1.7s;
+    opacity: 0;
+    }
+.active .ng9l {bottom:25%;opacity: 1; transition-delay: 1.7s;}
+
+.ng99l{   position: absolute;width: 80%;
+    left: 10%;
+    bottom: -42%;
+    transition: all 1.7s;
+    opacity: 0;
+    }
+.active .ng99l {bottom:25%;opacity: 1; transition-delay: 1.7s;}
+
+*{margin:0;padding: 0;}
+a{text-decoration: none;color: #000}
+ul li{list-style: none}
+ol li{list-style: none}
+li{list-style: none}
+html { font-size: 11px;font-family: "Microsoft YaHei";}
+body{position: relative;width:100%;height:100%
+}
+@media (min-width: 376px) and (max-width: 414px) {
+  html{font-size: 12px;}
+}
+@media (min-width: 415px) and (max-width: 639px) {
+  html{font-size: 14px;}
+}
+@media (min-width: 640px) and (max-width: 719px) {
+  html{font-size: 15px;}
+}
+@media (min-width: 720px) and (max-width: 749px) {
+  html{font-size: 16px;}
+}
+@media (min-width: 750px) and (max-width: 799px) {
+  html{font-size: 17px;}
+}
+@media (min-width: 800px) and (max-width: 992px) {
+  html{font-size: 21px;}
+}
+@media (min-width: 993px) and (max-width: 1366px) {
+  html{font-size: 21px;}
+}
+@media (min-width: 1366px) and (max-width:1920px) {
+  html{font-size: 21px;}
+}
+html,body{-webkit-text-size-adjust: 100%;-webkit-tap-highlight-color: rgba(0, 0, 0, 0);}
+.formDiv{position: absolute;width: 50%;left: 25%;top:24%; transition: all 1s;}
+.active .bg763 { top:45%; transition-delay: 0.7s;}
+label{width: 26%;text-align: right;display: inline-block;}
+.nickname,.iphone{    width: 100%;
+    height: 2rem;
+    text-align: center;
+    border: 1px dashed #333;
+    border-radius: 6px;
+    font-size: 1.2rem;
+    outline: none;}
+.iphone{margin: 2rem 0}
+.formBtn{    width: 100%;
+    text-align: center;
+    background: url(../img/H7103.png) no-repeat center;
+    background-size: contain;
+    height: 2.4rem;}
+.alertDiv{background:rgba(0,0,0,.2);position: absolute;z-index: 999;width: 100%;height: 100%;display: flex;
+    justify-content: center;
+    align-items: center;}
+.alertInfo{width: 40vw;
+    height: 40vw;
+    background: white;}
+
+
+
+.bg761 { position: absolute; width: 30%;
+    left: 36%;
+    top:0; transition: all 1s;}
+.active .bg761 { top:22%; transition-delay: 0.7s;}
+
+.bg762 { position: absolute; width: 30%;
+    left: 33%;
+    top:45%; transition: all 1s;}
+.active .bg762 { top:75%; transition-delay: 0.7s;}
+
+.music{position: fixed;    z-index: 100;
+    display: block;
+    top: 10px;
+    right: 10px;
+    width: 36px;
+    height: 36px;
+    cursor: pointer;
+    background-image: url(../img/music.png);
+    background-size: 72px 36px;
+    background-position: 0 0;
+    background-repeat: no-repeat;}
+.musicSelect{
+    background-position: -36px 0;}
+
+.active .demo1 {
+    opacity: 1;
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+    transition-delay: 0.7s;
+}
+
+.demo1 {
+   position: absolute;
+    left: 20%;
+    top: 20%;
+    z-index: 10;
+    width: 60%;
+    opacity: 0;
+    -webkit-transform: scale(0.5, 0.5);
+    transform: scale(0.5, 0.5);
+    transition: all 1s;
+}
+
+.active .demo2 {
+    opacity: 1;
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+    transition-delay: 0.7s;
+}
+
+.demo2 {
+   position: absolute;
+    left: 10%;
+    top: 36%;
+    z-index: 10;
+    width: 80%;
+    opacity: 0;
+    -webkit-transform: scale(1.5, 1.5);
+    transform: scale(1.5, 1.5);
+    transition: all 1s;
+}
+
+.active .ng6611 {
+    opacity: 1;
+    -webkit-transform:translate(0px,0px);
+    transform: translate(0px,0px);
+    transition-delay: 0.7s;
+}
+
+.ng6611 {
+   position: absolute;
+    left: 10%;
+    top: 26%;
+    z-index: 10;
+    width: 80%;
+    opacity: 0;
+    -webkit-transform:translate(-80px,-80px);
+    transform:translate(-80px,-80px);
+    transition: all 1s;
+}
+
+
+.active .ng6622 {
+    opacity: 1;
+    -webkit-transform:rotate(360deg);
+    transform:rotate(360deg);
+    transition-delay: 0.7s;
+}
+
+.ng6622 {
+   position: absolute;
+    left: 10%;
+    top: 56%;
+    z-index: 10;
+    width: 80%;
+    opacity: 0;
+    -webkit-transform:rotate(0deg);
+    transform:rotate(0deg);
+    transition: all 1s;
+}
+
+
+.active .ng999l {
+    opacity: 1;
+    -webkit-transform:rotateX(0deg);
+    transform:rotateX(0deg);
+    transition-delay: 0.7s;
+}
+
+.ng999l {
+   position: absolute;
+    left: 10%;
+    top: 50%;
+    z-index: 10;
+    width: 80%;
+    opacity: 0;
+    -webkit-transform:rotateX(90deg);
+    transform:rotateX(90deg);
+    transition: all 1s;
+}
+
+.active .index1 {
+    opacity: 1;
+    -webkit-transform:skew(0deg,0deg);
+    transform:skew(0deg,0deg);
+    transition-delay: 0.7s;
+}
+
+.index1 {
+   position: absolute;
+    left: 10%;
+    top: 28%;
+    z-index: 10;
+    width: 80%;
+    opacity: 0;
+    -webkit-transform:skew(90deg,90deg);
+    transform:skew(90deg,90deg);
+    transition: all 1s;
+}
