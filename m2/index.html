@@ -1,0 +1,23 @@
+<!DOCTYPE html><html><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0"><title>mmk</title><style>html,body{width: 100%;height: 100%;background: #F5F6FA}
+      .noselect{width: 100%!important}
+      .weui-dialog{border-radius: 8px!important}</style><link href=./static/css/app.a28bb8a329bd7b3821ab8a655ade49ba.css rel=stylesheet></head><body><div id=app-box></div><script type=text/javascript src=./static/js/manifest.3ad1d5771e9b13dbdad2.js></script><script type=text/javascript src=./static/js/vendor.2cab892f000706838512.js></script><script type=text/javascript src=./static/js/app.44c551b15e04f75b1d34.js></script></body></html><script>window.onload = function() {
+    // 阻止双击放大
+    var lastTouchEnd = 0;
+    document.addEventListener('touchstart', function(event) {
+        if (event.touches.length > 1) {
+            event.preventDefault();
+        }
+    });
+    document.addEventListener('touchend', function(event) {
+        var now = (new Date()).getTime();
+        if (now - lastTouchEnd <= 300) {
+            event.preventDefault();
+        }
+        lastTouchEnd = now;
+    }, false);
+
+    // 阻止双指放大
+    document.addEventListener('gesturestart', function(event) {
+        event.preventDefault();
+    });
+}</script>
