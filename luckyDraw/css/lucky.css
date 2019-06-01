@@ -9,8 +9,8 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 }
 
 html {
-	line-height: 1;
-	  -webkit-tap-highlight-color:rgba(0,0,0,0); 
+    line-height: 1;
+    -webkit-tap-highlight-color:rgba(0,0,0,0); 
 }
 
 ol,ul {
@@ -100,7 +100,7 @@ img{width: 100%;display: block}
     overflow: auto;}
 .popupChild>h3{color: white;
     font-size: 18px;
-    font-weight: 100;
+    font-weight: 500;
     height: 30px;
     line-height: 30px;
     margin-bottom: 10px}
