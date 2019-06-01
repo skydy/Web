@@ -1,0 +1,177 @@
+/* 样式重置 */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font: inherit;
+	font-size: 100%;
+    vertical-align: baseline;
+}
+
+html {
+	line-height: 1
+}
+
+ol,ul {
+	list-style: none
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0
+}
+
+caption,th,td {
+	text-align: left;
+	font-weight: 400;
+	vertical-align: middle
+}
+
+q,blockquote {
+	quotes: none
+}
+
+q:before,q:after,blockquote:before,blockquote:after {
+	content: "";
+	content: none
+}
+
+a img {
+	border: 0
+}
+.con{max-width: 500px;margin: 0 auto}
+/* top */
+img{width: 100%;display: block}
+.top{position: relative;}
+.topCon{    position: absolute;
+    bottom: -6%;
+    z-index: 3;}
+.tableDiv{position: absolute;
+    bottom: 25%;}
+.pointer{width: 39.2%;
+    position: absolute;
+    left: 30%;
+    top: 18%;
+    z-index: 2;}
+.rotate{width: 70%;
+    margin-left: 15%;}
+.ruleBtn{position: absolute;
+    z-index: 2;
+    width: 12%;
+    right: 0;
+    top: 5%;}
+.luckyNum{text-align: center;
+    color: white;
+    position: absolute;
+    width: 100%;
+    bottom: 4%;
+    font-size: 14px;}
+/* bottom */
+.bottom{position: relative;width: 100%}
+.botCon1{position: absolute;top:10%;width: 100%;}
+.botCon2{position: absolute;top: 42%;width: 100%}
+.imgCenter{width: 36%;
+    display: table;
+    margin: 0 auto;
+    margin-bottom: 3%;
+    margin-top: 2%;}
+.botConImg{position: relative;}
+.luckyBtn{width: 20%;
+    position: absolute;
+    top: 18%;
+    right: 9%;}
+
+#news-container{overflow: hidden;
+        position: absolute;
+        height: 86px!important;
+        z-index: 2;
+        width: 80%;
+        top: 35%;
+        left: 10%;}
+#news-container>ul>li{color: #bbb;
+    font-size: 12px;
+    height:17px ;line-height: 17px}
+/* popup */
+.popupChild{height: 380px;background: linear-gradient(140deg,rgba(255,157,118,1) 0%,rgba(255,69,148,1) 100%);
+    box-shadow: 0px -1px 4px 0px rgba(224,46,91,1), 0px 1px 10px 0px rgba(255,233,171,0.49);border-radius: 27px;padding: 30px;}
+.popupChild>div{width: 100%;
+    height: 300px;
+    overflow: auto;}
+.popupChild>h3{color: white;
+    font-size: 18px;
+    font-weight: 100;
+    height: 30px;
+    line-height: 30px;
+    margin-bottom: 10px}
+.popupChild>p{color: white;
+    font-size: 12px;
+    margin-top: 28px;}
+.popup-p1,.popup-p2{float: left;
+    width: 100%;
+    height: 46px;
+    line-height: 46px;
+    color: white;
+    border-bottom: 1px solid white;}
+.popup-p1>span:first-child{float: left;}
+.popup-p1>span:last-child{float: right;
+    width: 77px;
+    height: 28px;
+    background: #d1d1d1;
+    border-radius: 14px;
+    color: white;
+    line-height: 28px;
+    margin-top: 9px;}
+.popup-p2>span:first-child{float: left;}
+.popup-p2>span:last-child{float: right;
+    width: 77px;
+    height: 28px;
+    background: rgba(255,255,255,1);
+    border-radius: 14px;
+    color: #F64665;
+    line-height: 28px;
+    margin-top: 9px;}
+.popup-nav{position: absolute;
+    top: -11%;
+    z-index: -1;
+    width: 80%;
+    left: 10%;}
+.popup-close{width: 38px;
+    position: absolute;
+    bottom: -60px;
+    left: 43%;}
+/* layui */
+/* .layui-m-layercont{float: left} */
+/* 奖品弹窗 */
+.win1p{position: absolute;
+    top: 50%;
+    width: 70%;
+    left: 15%;color:white;font-size: 15px}
+.win1span{color:#FFE9AB}
+.win1know{width: 56%;
+    position: absolute;
+    top: 80%;
+    left: 22%;}
+.win1close{width: 38px;
+    position: absolute;
+    left: 43%;
+    bottom: -80px;}
+/* 选择地区 */
+.winSub{width: 70%;
+    margin: 0 auto;
+    margin-top: 40px;}
+.address-con{    height: 350px;
+    background: linear-gradient(140deg,rgba(255,157,118,1) 0%,rgba(255,69,148,1) 100%);
+    box-shadow: 0px -1px 4px 0px rgba(224,46,91,1), 0px 1px 10px 0px rgba(255,233,171,0.49);
+    border-radius: 27px;
+    padding: 30px;
+    border: 0 none;}
+.express-area>p{width: 100%;
+    color: white;
+    font-size: 15px;
+    margin-bottom: 20px;}
+#expressArea>i{display: inline-block;width: 100%;height: 1px;background: white}
+.spanInfo{position: absolute;
+    width: 100%;
+    left: 0;
+    color: #fff;
+    display: none}

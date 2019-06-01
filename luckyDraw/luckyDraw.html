@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+        <title>抽奖活动：幸运大转盘</title>
+        <!-- jquery引入 -->
+        <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+        <!-- layer相关引用 -->
+        <link rel="stylesheet" href="css/layer.css">
+        <script src="js/layer.js"></script>
+        <!-- url地址及token -->
+        <script src="js/url.js"></script>
+        <!-- 中奖滚动 -->
+        <script src="js/winInfo.js"></script>
+        <!-- 转盘相关 -->
+        <script src="js/awardRotate.js"></script>
+        <script src="js/roll.js"></script>
+        <script src="js/lucky.js"></script>
+        <!-- 我的奖品、规则回到底部方法 -->
+        <script src="js/myPrize.js"></script>
+        <!-- 所有样式 -->
+        <link rel="stylesheet" href="css/lucky.css">
+        <!-- 省市区样式 -->
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+<body>
+    <div class="con">
+        <!-- top -->
+        <div class="top">
+            <img src="img/top.png" alt="">
+            <img class="ruleBtn" src="img/ruleBtn.png" alt="">
+            <div class="topCon">
+                <img src="img/tableCon.png" alt="">
+                <div class="tableDiv">
+                    <div class="pointer"><img src="img/pointer.png" alt="pointer" /></div>
+                    <div class="rotate"><img id="rotate" src="img/rotaryTable.png" alt="turntable" /></div>
+                </div>
+                <div class="luckyNum">
+                    剩余
+                    <span class="count"></span>
+                    次抽奖机会
+                </div>
+            </div>
+        </div>
+        <!-- bottom  -->
+        <div class="bottom">
+            <img src="img/bottom.png" alt="">
+            <div class="botCon1">
+                <!-- navImg -->
+                <img class="imgCenter" src="img/luckyNav.png" alt="">
+                <!-- conImg -->
+                <div class="botConImg">
+                    <img src="img/rule1.png" alt="">
+                    <img class="luckyBtn" src="img/luckyBtn.png" alt="">
+                    <div  id="news-container">
+                        <ul class="news-ul">
+                            <!-- <li>第一条数据</li>-->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="botCon2">
+                <!-- navImg -->
+                <img style="margin-top: 6%;" class="imgCenter" src="img/ruleNav.png" alt="">
+                <!-- conImg -->
+                <img src="img/rule2.png" alt="">
+            </div>
+        </div>
+        <!-- 虚拟奖品弹窗 -->
+        <div class="winning1" style="display:none">
+            <div>
+                <img src="img/pop_prize.png" alt="">
+                <p class="win1p">恭喜亲爱的抽中了<span class="win1txt"></span>，已放至<span class="win1span">我的-卡券</span>点击我的奖品即可查看~</p>
+                <img src="img/btn_know.png" class="win1know" onclick="closeAll()" alt="">
+                <img class="win1close" onclick="closeAll()" src="img/ic_cancel.png" alt="">
+            </div>
+        </div>
+        <!-- 实物奖品弹窗 -->
+        <div class="winning2" style="display:none">
+            <div>
+                <img src="img/pop_prize.png" alt="">
+                <p class="win1p">恭喜亲爱的抽中了<span class="win2txt">啥啥啥</span>，点击我的奖品即可领取~</p>
+                <img src="img/btn_know.png" class="win1know" onclick="closeAll()" alt="">
+                <img class="win1close" onclick="closeAll()" src="img/ic_cancel.png" alt="">
+            </div>
+        </div>
+        <!-- popup -->
+        <div class="popup" style="display: none">
+            <img class="popup-nav" src="img/pop_prize1.png" alt="">
+            <div class="popupChild">
+                <h3>我的奖品</h3>
+                <div></div>
+                <h1 style="clear: both;"></h1>
+                <p>活动期间可领取（6.14-6.23）</p>
+            </div>
+            <img class="popup-close" onclick="closeAll()" src="img/ic_cancel.png" alt="">
+        </div>
+        <!--选择地区-->
+        <div class="browser" style="display:none">
+            <img class="popup-nav" src="img/pop_prize1.png" alt="">
+            <div class="address-con">
+                <section class="express-area">
+                    <p>恭喜亲爱的抽中了<span class="win2txt receTxt"></span>，填写收货地址即可领取（以下均为必填项）</p>
+                    <div id="expressArea" href="javascript:void(0)">
+                        <dl>
+                            <dt>收货人名</dt>
+                            <dd>
+                                <input class="inp consignee" type="text"  value ="" placeholder="请输入">
+                            </dd>
+                        </dl>
+                        <i></i>
+                        <dl>
+                            <dt>联系电话</dt>
+                            <dd>
+                                <input class="inp phone" type="text" placeholder="请输入">
+                            </dd>
+                        </dl>
+                        <i></i>
+                        <dl class="areaDl" onclick="expressAc()">
+                            <dt>所在地区</dt>
+                            <dd>
+                                <input type="text" class="inp region" placeholder="请选择" readonly>
+                            </dd>
+                        </dl>
+                        <i></i>
+                        <dl style="height: 56px">
+                            <dt>详细地址</dt>
+                            <dd>
+                                <textarea class="inp textare address" type="text" placeholder="请输入"></textarea>
+                            </dd>
+                        </dl>
+                    </div>
+                    <span class="spanInfo">均为必填项，请将信息填写完整</span>
+                    <img src="img/btn_submit.png" class="winSub" onclick="receiveSub()" alt="">
+                </section>
+            </div>
+            <img class="win1close" onclick="closeAll()" src="img/ic_cancel.png" alt="">
+        </div>
+        <!--选择地区弹层-->
+        <div>
+            <section id="areaLayer" class="express-area-box">
+                <header>
+                    <h3>请选择所在地区</h3>
+                    <a id="backUp" class="back" href="javascript:void(0)" title="返回"></a>
+                    <a id="closeArea" class="close" href="javascript:void(0)" title="关闭"></a>
+                </header>
+                <article id="areaBox">
+                    <ul id="areaList" class="area-list"></ul>
+                </article>
+            </section>
+            <!--遮罩层-->
+            <!-- <div id="areaMask" class="mask"></div> -->
+        </div>
+    </div>
+</body>
+</html>
+<!-- 省市区 -->
+<script src="js/jquery.area.js"></script>
