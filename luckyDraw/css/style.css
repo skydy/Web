@@ -32,7 +32,7 @@ input{outline: 0 none;color: white}
 	}
 .inp{    height: 28px;
 	background: transparent;
-	border: 0 none;}
+	border: 0 none;font-size: 13px}
 /* .inp::-webkit-input-placeholder{
 	color: white
 }　 */
