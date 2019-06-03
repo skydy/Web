@@ -99,6 +99,7 @@ $(function (){
 function winning1(e){
     $(".win1txt").html(e)
     layer.open({
+        shadeClose: false,
         content: $(".winning1").html()
     });
 }
@@ -106,6 +107,7 @@ function winning1(e){
 function winning2(e){
     $(".win2txt").html(e)
     layer.open({
+        shadeClose: false,
         content: $(".winning2").html()
     });
 }

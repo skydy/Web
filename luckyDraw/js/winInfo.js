@@ -1,3 +1,4 @@
+// 中奖列表
 $(function(){
     $.ajax({
         type: 'POST',
@@ -42,3 +43,39 @@ $(function(){
         }
     })  
 });
+//分享方法
+function shareFn(){
+    console.log("分享方法")
+    console.log(sessionStorage.getItem("broswer"))
+    switch (sessionStorage.getItem("broswer")) {
+        case "mp":
+            wx.miniProgram.postMessage({
+                data: {
+                    title: '618变美直通车，10万补贴强势来袭，戳我变美~~',
+                    desc: '',
+                    imageUrl: "https://h5.ameimeika.com/mp_images/mp_2.7/main.png",
+                    path: '/pages/entry/main?t=10&tg=0'
+                }
+            });
+            break;
+        case "android":
+            window.WebViewJsController.jsGetData(7, 18, JSON.stringify({
+                "wechat_path": " /pages/entry/main?tg=0&sid=" + this.user_id + "&t=10",
+                "wechatcicle_url": "https://h5s.ameimeika.com/618_2019_main/index.html",
+                "title": "618变美直通车，10万补贴强势来袭，戳我变美~~",
+                "descripe": "",
+                "share_image": this.ImgBaseUrl + "mp_2.6/520_project.jpg"
+            }), null);
+            break;
+        case "ios":
+            window.webkit.messageHandlers.minishare.postMessage({
+                "title": "618变美直通车，10万补贴强势来袭，戳我变美~~",
+                "path": "/pages/entry/main?tg=0&sid=" + this.user_id + "&t=10",
+                "image": this.ImgBaseUrl + "mp_2.6/520_project.jpg",
+                "desc": ""
+            });
+            break;
+        default:
+            break;
+    }
+}

@@ -117,7 +117,7 @@
 }
 
 .layui-m-layer0 .layui-m-layerchild {
-	width: 80%;
+	width: 84%;
 	max-width: 640px
 }
 
@@ -341,7 +341,7 @@ body .layui-m-layer .layui-m-layer-footer {
 
 body .layui-m-layer .layui-m-layer-msg {
 	width: auto;
-	max-width: 90%;
+	max-width: 210px;
 	margin: 0 auto;
 	bottom: -45%;
 	background-color: rgba(0,0,0,.7);
@@ -349,5 +349,5 @@ body .layui-m-layer .layui-m-layer-msg {
 }
 
 .layui-m-layer-msg .layui-m-layercont {
-	padding: 30px
+	padding: 24px 8px;
 }

@@ -11,7 +11,7 @@
         <script src="js/layer.js"></script>
         <!-- url地址及token -->
         <script src="js/url.js"></script>
-        <!-- 中奖滚动 -->
+        <!-- 中奖列表滚动、分享方法 -->
         <script src="js/winInfo.js"></script>
         <!-- 转盘相关 -->
         <script src="js/awardRotate.js"></script>
@@ -23,12 +23,15 @@
         <link rel="stylesheet" href="css/lucky.css">
         <!-- 省市区样式 -->
         <link rel="stylesheet" href="css/style.css">
+        <!-- 微信相关库 -->
+        <script type="text/javascript" src="https://res.wx.qq.com/open/js/jweixin-1.3.2.js"></script>
     </head>
 <body>
     <div class="con">
         <!-- top -->
         <div class="top">
             <img src="img/top.png" alt="">
+            <img class="shareBtn" onclick="shareFn()" src="img/shareBtn.png" alt="">
             <img class="ruleBtn" src="img/ruleBtn.png" alt="">
             <div class="topCon">
                 <img src="img/tableCon.png" alt="">
@@ -106,14 +109,14 @@
                         <dl>
                             <dt>收货人名</dt>
                             <dd>
-                                <input class="inp consignee" type="text"  value ="" placeholder="请输入">
+                                <input class="inp consignee" type="text" onclick="areaClose()" value ="" placeholder="请输入">
                             </dd>
                         </dl>
                         <i></i>
                         <dl>
                             <dt>联系电话</dt>
                             <dd>
-                                <input class="inp phone" type="text" placeholder="请输入">
+                                <input class="inp phone" maxlength="11" onblur="phoneReg(this)" type="text" onclick="areaClose()" placeholder="请输入">
                             </dd>
                         </dl>
                         <i></i>
@@ -127,11 +130,11 @@
                         <dl style="height: 56px">
                             <dt>详细地址</dt>
                             <dd>
-                                <textarea class="inp textare address" type="text" placeholder="请输入"></textarea>
+                                <textarea class="inp textare address" onclick="areaClose()" type="text" placeholder="请输入"></textarea>
                             </dd>
                         </dl>
                     </div>
-                    <span class="spanInfo">均为必填项，请将信息填写完整</span>
+                    <span class="spanInfo"></span>
                     <img src="img/btn_submit.png" class="winSub" onclick="receiveSub()" alt="">
                 </section>
             </div>
