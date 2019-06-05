@@ -97,12 +97,17 @@ img{width: 100%;display: block}
         width: 80%;
         top: 35%;
         left: 10%;}
+#news-container>ul{width: 100%}
 #news-container>ul>li{color: #bbb;
-    font-size: 12px;
-    height:17px ;line-height: 17px}
+    font-size: 10px;
+    height:17px ;
+    line-height: 17px;
+    overflow: hidden;
+    width: 100%;
+    text-overflow:ellipsis;
+    white-space: nowrap;}
 /* popup */
-.popupChild{height: 340px;background: linear-gradient(140deg,rgba(255,157,118,1) 0%,rgba(255,69,148,1) 100%);
-    box-shadow: 0px -1px 4px 0px rgba(224,46,91,1), 0px 1px 10px 0px rgba(255,233,171,0.49);border-radius: 27px;padding: 30px;}
+.popupChild{height: 340px;background: linear-gradient(140deg,rgba(255,157,118,1) 0%,rgba(255,69,148,1) 100%);border-radius: 27px;padding: 30px;}
 .popupChild>div{width: 100%;
     height: 266px;
     overflow: auto;}
@@ -122,26 +127,29 @@ img{width: 100%;display: block}
     color: white;
     font-size: 15px;
     border-bottom: 1px solid rgba(255,255,255,0.2)}
-.popup-p1>span:first-child{float: left;}
+.popup-p1>span:first-child{float: left;font-size: 14px;}
 .popup-p1>span:last-child{float: right;
-    width: 77px;
-    height: 28px;
+    width: 60px;
+    height: 24px;
     background: #d1d1d1;
     border-radius: 14px;
     color: white;
-    line-height: 28px;
-    margin-top: 9px;}
-.popup-p2>span:first-child{float: left;}
-.popup-p2>span:last-child{float: right;
-    width: 77px;
-    height: 28px;
+    line-height: 24px;
+    margin-top: 11px;
+    font-size: 13px;}
+.popup-p2>span:first-child{float: left;font-size: 14px;}
+.popup-p2>span:last-child{
     background: rgba(255,255,255,1);
-    border-radius: 14px;
     color: #F64665;
-    line-height: 28px;
-    margin-top: 9px;}
+    float: right;
+    width: 60px;
+    height: 24px;
+    border-radius: 14px;
+    line-height: 24px;
+    margin-top: 11px;
+    font-size: 13px;}
 .popup-nav{position: absolute;
-    top: -13%;
+    top: -14%;
     z-index: -1;
     width: 80%;
     left: 10%;}
@@ -169,15 +177,14 @@ img{width: 100%;display: block}
 .winSub{width: 70%;
     margin: 0 auto;
     margin-top: 40px;}
-.address-con{height: 340px;
+.address-con{height: 360px;
     background: linear-gradient(140deg,rgba(255,157,118,1) 0%,rgba(255,69,148,1) 100%);
-    box-shadow: 0px -1px 4px 0px rgba(224,46,91,1), 0px 1px 10px 0px rgba(255,233,171,0.49);
     border-radius: 27px;
     padding: 30px;
     border: 0 none;}
 .express-area>p{width: 100%;
     color: white;
-    font-size: 15px;
+    font-size: 16px;
     margin-bottom: 20px;}
 #expressArea>i{display: inline-block;width: 100%;height: 1px;background: rgba(255,255,255,.2)}
 .spanInfo{position: absolute;
