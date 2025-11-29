@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>audio-player</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .audio-player {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            padding: 30px;
+            width: 100%;
+            max-width: 380px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .animate {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 30px;
+        }
+
+        #animate-img {
+            width: 220px;
+            height: 220px;
+            border-radius: 50%;
+            object-fit: cover;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+            -webkit-animation: spin 8s linear infinite;
+            animation: spin 8s linear infinite;
+            transition: all 0.3s ease;
+        }
+
+        @keyframes spin {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        .suspended {
+            animation-play-state: paused !important;
+            filter: brightness(0.9);
+        }
+
+        .controls {
+            display: flex;
+            gap: 12px;
+            margin-bottom: 25px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .controls button {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 50px;
+            cursor: pointer;
+            font-size: 15px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 10px rgba(102, 126, 234, 0.3);
+            flex: 1;
+            min-width: 120px;
+        }
+
+        .controls button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 15px rgba(102, 126, 234, 0.4);
+        }
+
+        .controls select {
+            background: #f0f4ff;
+            border: 1px solid #e0e7ff;
+            padding: 12px 18px;
+            border-radius: 50px;
+            font-size: 15px;
+            color: #4a5568;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            flex: 1;
+            min-width: 100px;
+        }
+
+        .controls select:focus {
+            outline: none;
+            border-color: #667eea;
+            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.2);
+        }
+
+        .time {
+            background: #f8faff;
+            padding: 12px 20px;
+            border-radius: 12px;
+            text-align: center;
+            font-size: 16px;
+            color: #2d3748;
+            font-weight: 500;
+            box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.05);
+        }
+
+        /* 响应式适配 */
+        @media (max-width: 400px) {
+            .audio-player {
+                padding: 20px;
+            }
+
+            #animate-img {
+                width: 180px;
+                height: 180px;
+            }
+
+            .controls button {
+                padding: 10px 16px;
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="audio-player">
+        <div class="animate">
+            <img src="./record.png" id="animate-img" class="suspended" alt="唱片封面">
+        </div>
+
+        <div class="controls">
+            <button id="playBtn">播放</button>
+            <button id="forwardBtn">快进10s</button>
+            <button id="backwardBtn">快退10s</button>
+            <select id="speedSelect">
+                <option value="0.5">0.5x</option>
+                <option value="1" selected>1x</option>
+                <option value="1.5">1.5x</option>
+                <option value="2">2x</option>
+            </select>
+        </div>
+
+        <div class="time" id="timeDisplay">00:00 / 00:00</div>
+    </div>
+
+    <script>
+        class AudioPlayer {
+            constructor(audioUrl) {
+                this.audio = new Audio(audioUrl);
+                this.isPlaying = false;
+
+                // 绑定DOM元素
+                this.playBtn = document.getElementById('playBtn');
+                this.forwardBtn = document.getElementById('forwardBtn');
+                this.backwardBtn = document.getElementById('backwardBtn');
+                this.speedSelect = document.getElementById('speedSelect');
+                this.timeDisplay = document.getElementById('timeDisplay');
+                this.animateImg = document.getElementById('animate-img');
+
+                this.bindEvents();
+                this.updateTimeDisplay();
+            }
+
+            // 格式化时间（秒转分:秒）
+            formatTime(seconds) {
+                const min = Math.floor(seconds / 60);
+                const sec = Math.floor(seconds % 60);
+                return `${min.toString().padStart(2, '0')}:${sec.toString().padStart(2, '0')}`;
+            }
+
+            // 更新时间显示
+            updateTimeDisplay() {
+                setInterval(() => {
+                    const currentTime = this.audio.currentTime;
+                    const duration = this.audio.duration || 0;
+                    this.timeDisplay.textContent =
+                        `${this.formatTime(currentTime)} / ${this.formatTime(duration)}`;
+                }, 1000);
+            }
+
+            // 绑定事件
+            bindEvents() {
+                // 播放/暂停
+                this.playBtn.addEventListener('click', () => {
+                    if (this.isPlaying) {
+                        this.audio.pause();
+                        this.playBtn.textContent = '播放';
+                        this.animateImg.classList.add('suspended');
+                    } else {
+                        this.audio.play();
+                        this.playBtn.textContent = '暂停';
+                        this.animateImg.classList.remove('suspended');
+                    }
+                    this.isPlaying = !this.isPlaying;
+                });
+
+                // 快进10s
+                this.forwardBtn.addEventListener('click', () => {
+                    this.audio.currentTime = Math.min(this.audio.currentTime + 10, this.audio.duration || 0);
+                });
+
+                // 快退10s
+                this.backwardBtn.addEventListener('click', () => {
+                    this.audio.currentTime = Math.max(this.audio.currentTime - 10, 0);
+                });
+
+                // 倍速播放
+                this.speedSelect.addEventListener('change', (e) => {
+                    this.audio.playbackRate = parseFloat(e.target.value);
+                });
+            }
+        }
+
+        // 使用示例（替换为实际音频URL）
+        const player = new AudioPlayer('./chengdu.mp3');
+    </script>
+</body>
+</html>
